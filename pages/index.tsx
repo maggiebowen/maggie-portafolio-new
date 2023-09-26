@@ -29,7 +29,7 @@ function Home() {
           <p className={styles.description}>
             <i>Artist, Coder, Teacher</i>
           </p>
-
+          <p>simple changes made but nothing loads fuck</p>
           <Navigation />
         </main>
       </div>
