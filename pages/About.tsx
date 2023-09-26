@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css';
 
-function About() {
+function about() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>About Maggie Bowen</h1>
@@ -9,4 +9,4 @@ function About() {
   );
 }
 
-export default About;
+export default about;
