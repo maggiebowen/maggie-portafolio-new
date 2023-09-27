@@ -68,6 +68,11 @@ function about() {
           about the Aunt Skatie community to learn more. In the past, Maggie has also volunteered
           for other non-profits such as Compton Cowboys, God’s Kitchen, and Exposure Skate.
         </p>
+        <p>
+          Inspired by her volunteer work and teaching positions, Maggie seeks a career which allows
+          her to develop software that can be utilized by students to learn new languages, including
+          programming languages and make computer programming welcoming to everyone.
+        </p>
       </div>
     </div>
   );
