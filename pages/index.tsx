@@ -30,7 +30,9 @@ function Home() {
             <Link href="/">Maggie Bowen</Link>
           </h1>
           <p className={styles.description}>
-            <i>Artist, Coder, Teacher</i>
+            <i>
+              <b>Artist, Coder, Teacher</b>
+            </i>
           </p>
           <Navigation />
         </main>
