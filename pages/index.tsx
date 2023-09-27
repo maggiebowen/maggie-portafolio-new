@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Navigation from './Navigation';
 import bgImg from './images/surf-background-cover-page.jpg';
@@ -25,11 +26,12 @@ function Home() {
           />
         </div>
         <main className={styles.main}>
-          <h1 className={styles.title}>Maggie Bowen</h1>
+          <h1 className={styles.title}>
+            <Link href="/">Maggie Bowen</Link>
+          </h1>
           <p className={styles.description}>
             <i>Artist, Coder, Teacher</i>
           </p>
-          <p>simple changes made but nothing loads fuck</p>
           <Navigation />
         </main>
       </div>
