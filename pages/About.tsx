@@ -2,29 +2,41 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Navigation from './Navigation';
-import bgImg from './images/maggie-at-joshua-tree.jpg';
+import bgImg1 from './images/maggie-with-camera.jpg';
+
+const abtImgStyle = {
+  borderRadius: '5%',
+  width: '70%',
+  height: '70%',
+};
 
 function about() {
   return (
-    <div className={styles.container}>
-      <div className={styles.bgWrap}>
-        <Image
-          alt="photo of Maggie at Joshua Tree National Park"
-          src={bgImg}
-          placeholder="blur"
-          quality={100}
-          fill
-          style={{
-            objectFit: 'cover',
-          }}
-        />
-      </div>
+    <div className={styles.aboutPg}>
       <h1 className={styles.pageTitle}>
         About <Link href="/">Maggie</Link>
       </h1>
       <Navigation />
 
-      <div className={styles.aboutPage}>
+      <div className={styles.aboutPageContainer}>
+        <div className={styles.aboutImg}>
+          <Image
+            alt="photo of Maggie at Joshua Tree National Park"
+            src={bgImg1}
+            placeholder="blur"
+            quality={100}
+            style={abtImgStyle}
+          />
+        </div>
+
+        <a
+          href="https://docs.google.com/document/d/1O0KJ7yNw16_6widqJZn9cHQquLL69HF-BfeX67sXfi0/edit?usp=sharing"
+          download="Maggie-Bowen-resume"
+        >
+          Resume
+        </a>
+        <br />
+
         <p>
           Maggie is a computer programmer, visual artist, photographer, and teacher. She currently
           works as a teacher in a bilingual primary school located in Madrid through the Spanish
@@ -61,7 +73,7 @@ function about() {
           years to creating and supporting chapters of Girls Who Code in her hometown and even
           created her own skateboarding community at USC,{' '}
           <a href="https://www.instagram.com/auntskatie/?hl=en">Aunt Skatie</a>, where she ran
-          clinics for fellow female and LGBTQ+ skateboarders. See this
+          clinics for fellow female and LGBTQ+ skateboarders. See this{' '}
           <a href="https://www.latimes.com/sports/story/2021-12-08/women-lgbtq-community-skateboarding-culture">
             <i>LA Times</i> article
           </a>{' '}
