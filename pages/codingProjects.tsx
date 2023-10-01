@@ -6,6 +6,13 @@ function codingProjects() {
     <div className={styles.projectsContainer}>
       <h1 className={styles.pageTitle}>Coding Projects</h1>
       <Navigation />
+      <h2>Check out my Github accounts:</h2>
+      <p>
+        <a href="https://github.com/maggiebowen">Personal Github</a>
+      </p>
+      <p>
+        <a href="https://github.com/maebow">University Github</a>
+      </p>
       <h2>Assignments from React Class</h2>
       <iframe
         src="https://codesandbox.io/embed/a6-fvb04?fontsize=14&hidenavigation=1&theme=dark"
