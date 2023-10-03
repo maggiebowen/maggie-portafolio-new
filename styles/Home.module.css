@@ -19,6 +19,21 @@
   text-shadow: 1px 1px 1px #3c5c5e;
 } */
 
+.button {
+  color: #fff;
+  background-color: #ff0088;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   min-height: 100vh;
   padding: 5% 0 0;
@@ -76,9 +91,8 @@
 .aboutPageContainer {
   font-size: 1rem;
   text-align: left;
-  padding: 3%;
   border-radius: 35px;
-  margin: 4em;
+  margin: 0 4em;
   line-height: 1.3;
   text-indent: 5%;
 }

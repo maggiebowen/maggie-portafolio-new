@@ -19,6 +19,12 @@ function about() {
       <Navigation />
 
       <div className={styles.aboutPageContainer}>
+        <div className={styles.center}>
+          <a href="https://docs.google.com/document/d/e/2PACX-1vQDwF62w4W-OdjWYjkDpGt__1oBZEobzoQtSddFpP7wuF9EvOD-GN1dVwmt21ZUURh6VvttzemtUTRy/pub">
+            {/* eslint-disable-next-line */}
+            <button className={styles.button}>Check out Maggie's resume</button>
+          </a>
+        </div>
         <div className={styles.aboutImg}>
           <Image
             alt="photo of Maggie at Joshua Tree National Park"
@@ -28,13 +34,6 @@ function about() {
             style={abtImgStyle}
           />
         </div>
-
-        <a
-          href="https://docs.google.com/document/d/1O0KJ7yNw16_6widqJZn9cHQquLL69HF-BfeX67sXfi0/edit?usp=sharing"
-          download="Maggie-Bowen-resume"
-        >
-          Resume
-        </a>
         <br />
 
         <p>
