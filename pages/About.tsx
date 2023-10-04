@@ -19,12 +19,7 @@ function about() {
       <Navigation />
 
       <div className={styles.aboutPageContainer}>
-        <div className={styles.center}>
-          <a href="https://docs.google.com/document/d/e/2PACX-1vQDwF62w4W-OdjWYjkDpGt__1oBZEobzoQtSddFpP7wuF9EvOD-GN1dVwmt21ZUURh6VvttzemtUTRy/pub">
-            {/* eslint-disable-next-line */}
-            <button className={styles.button}>Check out Maggie's resume</button>
-          </a>
-        </div>
+        <br />
         <div className={styles.aboutImg}>
           <Image
             alt="photo of Maggie at Joshua Tree National Park"
@@ -35,7 +30,12 @@ function about() {
           />
         </div>
         <br />
-
+        <div className={styles.center}>
+          <a href="https://docs.google.com/document/d/e/2PACX-1vQDwF62w4W-OdjWYjkDpGt__1oBZEobzoQtSddFpP7wuF9EvOD-GN1dVwmt21ZUURh6VvttzemtUTRy/pub">
+            {/* eslint-disable-next-line */}
+            <button className={styles.button}>Check out Maggie's resume</button>
+          </a>
+        </div>
         <p>
           Maggie is a computer programmer, visual artist, photographer, and teacher. She currently
           works as a teacher in a bilingual primary school located in Madrid through the Spanish
@@ -83,6 +83,8 @@ function about() {
           Inspired by her volunteer work and teaching positions, Maggie seeks a career which allows
           her to develop software that can be utilized by students to learn new languages, including
           programming languages and make computer programming welcoming to everyone.
+          <br />
+          <br />
         </p>
       </div>
     </div>
