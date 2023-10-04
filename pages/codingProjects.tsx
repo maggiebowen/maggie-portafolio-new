@@ -17,6 +17,9 @@ function codingProjects() {
         <button className={styles.button}>University Github</button>
       </a>
 
+      <h2>About this site:</h2>
+      <p>This website was programmed in Typescript.</p>
+
       <h2>Assignments from React Class:</h2>
       <iframe
         src="https://codesandbox.io/embed/a6-fvb04?fontsize=14&hidenavigation=1&theme=dark"

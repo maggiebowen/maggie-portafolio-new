@@ -3,9 +3,9 @@ import Navigation from './Navigation';
 
 function filmmaking() {
   return (
-    <div className={styles.container}>
+    <div className={styles.secondaryPage}>
+      <h1 className={styles.pageTitle}>Filmmaking</h1>
       <Navigation />
-      <h1>filmmaking by Maggie</h1>
       <p>haven&#39;t made about page yet</p>
     </div>
   );

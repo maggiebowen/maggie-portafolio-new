@@ -1,7 +1,5 @@
 .container {
   padding: 0;
-  color: #fff;
-  background-color: #111;
 }
 
 .bgWrap {
@@ -86,7 +84,7 @@
   color: #fff;
 }
 
-.aboutPg {
+.secondaryPage {
   color: #fff;
   background-color: #111;
 }
@@ -98,6 +96,7 @@
   margin: 0 4em;
   line-height: 1.3;
   text-indent: 5%;
+  height: 100%;
 }
 
 .aboutPageContainer a {

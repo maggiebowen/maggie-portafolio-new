@@ -3,9 +3,9 @@ import Navigation from './Navigation';
 
 function visualArt() {
   return (
-    <div className={styles.container}>
+    <div className={styles.secondaryPage}>
+      <h1 className={styles.pageTitle}>Visual Art</h1>
       <Navigation />
-      <h1>Visual Art by Maggie Bowen</h1>
       <p>haven&#39;t made about page yet</p>
     </div>
   );

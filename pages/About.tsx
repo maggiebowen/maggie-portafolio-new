@@ -12,7 +12,7 @@ const abtImgStyle = {
 
 function about() {
   return (
-    <div className={styles.aboutPg}>
+    <div className={styles.secondaryPage}>
       <h1 className={styles.pageTitle}>
         About <Link href="/">Maggie</Link>
       </h1>
@@ -31,7 +31,11 @@ function about() {
         </div>
         <br />
         <div className={styles.center}>
-          <a href="https://docs.google.com/document/d/e/2PACX-1vQDwF62w4W-OdjWYjkDpGt__1oBZEobzoQtSddFpP7wuF9EvOD-GN1dVwmt21ZUURh6VvttzemtUTRy/pub">
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vQDwF62w4W-OdjWYjkDpGt__1oBZEobzoQtSddFpP7wuF9EvOD-GN1dVwmt21ZUURh6VvttzemtUTRy/pub"
+            target="_blank"
+            rel="noreferrer"
+          >
             {/* eslint-disable-next-line */}
             <button className={styles.button}>Check out Maggie's resume</button>
           </a>

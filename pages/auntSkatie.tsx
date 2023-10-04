@@ -3,9 +3,9 @@ import Navigation from './Navigation';
 
 function auntSkatie() {
   return (
-    <div className={styles.container}>
+    <div className={styles.secondaryPage}>
+      <h1 className={styles.pageTitle}>Aunt Skatie, LGBT and womens skate club</h1>
       <Navigation />
-      <h1>Aunt Skatie, LGBT and womens skate club</h1>
       <p>haven&#39;t made about page yet</p>
     </div>
   );
