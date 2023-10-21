@@ -149,3 +149,13 @@
   line-height: 1.5;
   font-size: 1.5rem;
 }
+
+.imageGrid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.imageGrid img {
+  width: 100%;
+}

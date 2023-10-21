@@ -1,16 +1,22 @@
+import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './Navigation';
 import images from './api/api-mock.json';
 
-function visualArt() {
-  console.log(images);
+const visualArt = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [imageList, setImageList] = useState(images.resources);
   return (
     <div className={styles.secondaryPage}>
       <h1 className={styles.pageTitle}>Visual Art</h1>
       <Navigation />
-      <p>haven&#39;t made about page yet</p>
+      <div className={styles.imageGrid}>
+        {imageList.map((image) => (
+          <img src={image.url} alt={image.public_id} />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default visualArt;
