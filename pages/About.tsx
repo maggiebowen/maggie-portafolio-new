@@ -18,7 +18,7 @@ function about() {
       </h1>
       <Navigation />
 
-      <div className={styles.aboutPageContainer}>
+      <div className={styles.textContainer}>
         <br />
         <div className={styles.aboutImg}>
           <Image

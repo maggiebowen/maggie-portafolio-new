@@ -29,6 +29,34 @@
   margin: 0 1rem;
 }
 
+.circleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 4rem;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ff0000;
+  transition: all 0.25s ease;
+  padding: 10px;
+}
+
+/* CIRCLE HOVERS */
+.circle:hover {
+  padding: 20%;
+  margin-top: -20px;
+  margin-left: -20px;
+  cursor: pointer;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -87,9 +115,10 @@
 .secondaryPage {
   color: #fff;
   background-color: #111;
+  height: 100%;
 }
 
-.aboutPageContainer {
+.textContainer {
   font-size: 1rem;
   text-align: left;
   border-radius: 35px;
@@ -99,7 +128,7 @@
   height: 100%;
 }
 
-.aboutPageContainer a {
+.textContainer a {
   text-decoration: underline;
   color: #ff0088;
 }

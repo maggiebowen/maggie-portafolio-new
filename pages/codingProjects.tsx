@@ -7,18 +7,15 @@ function codingProjects() {
       <h1 className={styles.pageTitle}>Coding Projects</h1>
       <Navigation />
       <h2>Check out my Github accounts:</h2>
-      <a href="https://github.com/maggiebowen">
+      <a href="https://github.com/maggiebowen" target="_blank" rel="noreferrer">
         {/* eslint-disable-next-line */}
         <button className={styles.button}>Personal Github</button>
       </a>
 
-      <a href="https://github.com/maebow">
+      <a href="https://github.com/maebow" target="_blank" rel="noreferrer">
         {/* eslint-disable-next-line */}
         <button className={styles.button}>University Github</button>
       </a>
-
-      <h2>About this site:</h2>
-      <p>This website was programmed in Typescript.</p>
 
       <h2>Assignments from React Class:</h2>
       <iframe
@@ -50,6 +47,10 @@ function codingProjects() {
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
         sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
       />
+
+      <h2>About this site:</h2>
+      <p>This website was programmed in the Javascript framework Typescript.</p>
+      <br />
     </div>
   );
 }
