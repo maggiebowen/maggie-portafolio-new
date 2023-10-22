@@ -1,12 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './Navigation';
-import images from './apiMock/api-mock.json';
+import { getImages } from './api';
 
 const visualArt = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [imageList, setImageList] = useState(images.resources);
+  const [imageList, setImageList] = useState([]);
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    const fetchData = async () => {
+      const responseJson = await getImages();
+      setImageList(responseJson.resources);
+    };
+
+    fetchData();
+  }, []);
+
   return (
+    // eslint-disable-next-line react/jsx-filename-extension
     <div className={styles.secondaryPage}>
       <h1 className={styles.pageTitle}>Visual Art</h1>
       <Navigation />
