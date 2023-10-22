@@ -27,7 +27,7 @@
     "es2021": true,
     "node": true
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "react-hooks"],
   "extends": [
     "next",
     "airbnb",
@@ -76,6 +76,8 @@
       {
         "allow": ["_path", "_nanoseconds", "_seconds"]
       }
-    ]
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }

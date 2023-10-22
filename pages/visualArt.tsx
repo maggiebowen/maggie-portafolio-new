@@ -1,13 +1,11 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './Navigation';
 import { getImages } from './api';
 
-const visualArt = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+function VisualArt() {
   const [imageList, setImageList] = useState([]);
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const fetchData = async () => {
       const responseJson = await getImages();
@@ -29,6 +27,6 @@ const visualArt = () => {
       </div>
     </div>
   );
-};
+}
 
-export default visualArt;
+export default VisualArt;
