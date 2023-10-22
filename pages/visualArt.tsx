@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './Navigation';
-import images from './api/api-mock.json';
+import images from './apiMock/api-mock.json';
 
 const visualArt = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
