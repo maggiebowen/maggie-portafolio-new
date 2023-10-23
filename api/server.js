@@ -1,7 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const express = require('express');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const dotenv = require('dotenv');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const cors = require('cors');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { json } = require('body-parser');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const axios = require('axios');
 
 const app = express();
