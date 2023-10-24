@@ -1,4 +1,5 @@
-const API_URL = process.env.REACT_APP_API_URL;
+// const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = 'http://localhost:7000';
 
 // eslint-disable-next-line import/prefer-default-export
 export const getImages = async () => {
