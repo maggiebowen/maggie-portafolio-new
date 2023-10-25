@@ -5,15 +5,23 @@ import { getImages } from './api';
 
 function VisualArt() {
   const [imageList, setImageList] = useState([]);
+  const [nextCursor, setNextCursor] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       const responseJson = await getImages();
       setImageList(responseJson.resources);
+      setNextCursor(responseJson.next_cursor);
     };
 
     fetchData();
   }, []);
+
+  const handleLoadMore = async () => {
+    const responseJson = await getImages(nextCursor);
+    setImageList((currentImageList) => [...currentImageList, ...responseJson.resources]);
+    setNextCursor(responseJson.next_cursor);
+  };
 
   return (
     // eslint-disable-next-line react/jsx-filename-extension
@@ -25,6 +33,7 @@ function VisualArt() {
           <img src={image.url} alt={image.public_id} />
         ))}
       </div>
+      <div>{nextCursor && <button onClick={handleLoadMore}>Load More</button>}</div>
     </div>
   );
 }
