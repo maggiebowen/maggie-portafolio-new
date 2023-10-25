@@ -33,7 +33,13 @@ function VisualArt() {
           <img src={image.url} alt={image.public_id} />
         ))}
       </div>
-      <div>{nextCursor && <button onClick={handleLoadMore}>Load More</button>}</div>
+      <div>
+        {nextCursor && (
+          <button onClick={handleLoadMore} type="button">
+            Load More
+          </button>
+        )}
+      </div>
     </div>
   );
 }
