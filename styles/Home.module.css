@@ -156,6 +156,8 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-.imageGrid img {
-  width: 100%;
+.apiImages {
+  position: relative;
+  width: 130px;
+  height: 130px;
 }

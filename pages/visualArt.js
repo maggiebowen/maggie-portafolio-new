@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './Navigation';
@@ -29,9 +30,11 @@ function VisualArt() {
       <h1 className={styles.pageTitle}>Visual Art</h1>
       <Navigation />
       <div className={styles.imageGrid}>
-        {imageList.map((image) => (
-          <img src={image.url} alt={image.public_id} />
-        ))}
+        <div className={styles.apiImages}>
+          {imageList.map((image) => (
+            <Image fill src={image.url} alt={image.public_id} />
+          ))}
+        </div>
       </div>
       <div>
         {nextCursor && (

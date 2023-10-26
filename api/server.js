@@ -25,6 +25,9 @@ const auth = {
 app.get('/photos', async (req, res) => {
   const response = await axios.get(BASE_URL, {
     auth,
+    params: {
+      next_cursor: req.query.next_cursor,
+    },
   });
   return res.send(response.data);
 });
