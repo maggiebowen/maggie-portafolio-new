@@ -30,11 +30,16 @@ function VisualArt() {
       <h1 className={styles.pageTitle}>Visual Art</h1>
       <Navigation />
       <div className={styles.imageGrid}>
-        {/* <div className={styles.apiImages}> */}
         {imageList.map((image) => (
-          <Image src={image.url} alt={image.public_id} width={image.width} height={image.height} />
+          <Image
+            src={image.url}
+            alt={image.public_id}
+            width={image.width}
+            height={image.height}
+            layout="responsive"
+            className={styles.apiImages}
+          />
         ))}
-        {/* </div> */}
       </div>
       <div>
         {nextCursor && (
