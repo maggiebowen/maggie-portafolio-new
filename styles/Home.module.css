@@ -152,12 +152,10 @@
 
 .imageGrid {
   display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 50%;
 }
 
 .apiImages {
-  position: relative;
-  width: 130px;
-  height: 130px;
+  width: 100%;
+  height: auto
 }
