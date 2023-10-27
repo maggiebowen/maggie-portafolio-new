@@ -10,16 +10,7 @@
   z-index: -1;
 }
 
-/* .bgText {
-  margin: 0;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: center;
-  padding-top: 40vh;
-  text-shadow: 1px 1px 1px #3c5c5e;
-} */
-
-.button {
+.resumeBtn {
   color: #fff;
   background-color: #ff0088;
   border-radius: 10px;
@@ -27,6 +18,17 @@
   font-size: 1rem;
   padding: 10px;
   margin: 0 1rem;
+}
+
+.loadMoreBtn {
+  color: #fff;
+  background-color: #ff0088;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 5%;
+  width: 20%;
 }
 
 .circleContainer {
@@ -151,10 +153,18 @@
 }
 
 .imageGrid {
+  margin-top: 5%;
   display: grid;
-  width: 30%;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .apiImages {
   border-radius: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

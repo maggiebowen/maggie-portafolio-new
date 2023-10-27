@@ -41,9 +41,9 @@ function VisualArt() {
           />
         ))}
       </div>
-      <div>
+      <div className={styles.center}>
         {nextCursor && (
-          <button onClick={handleLoadMore} type="button">
+          <button onClick={handleLoadMore} type="button" className={styles.loadMoreBtn}>
             Load More
           </button>
         )}

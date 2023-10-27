@@ -37,7 +37,7 @@ function about() {
             rel="noreferrer"
           >
             {/* eslint-disable-next-line */}
-            <button className={styles.button}>Check out Maggie's resume</button>
+            <button className={styles.resumeBtn}>Check out Maggie's resume</button>
           </a>
         </div>
         <p>
