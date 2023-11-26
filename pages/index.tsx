@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-import Navigation from './Navigation';
+import Navigation from './components/Navigation';
 import bgImg from './images/surf-background-cover-page.jpg';
 
 function Home() {

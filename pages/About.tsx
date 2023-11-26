@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-import Navigation from './Navigation';
+import Navigation from './components/Navigation';
 import bgImg1 from './images/maggie-with-camera.jpg';
 
 const abtImgStyle = {
