@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable no-restricted-globals */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/prop-types */
@@ -7,7 +6,6 @@ import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 import { getPhotographyFolders, mapImageResources, search } from './lib/cloudinary';
-// import images from '../data/images.json';
 
 export default function Photography({
   images: defaultImages,
@@ -44,7 +42,7 @@ export default function Photography({
   //   setNextCursor(updatedNextCursor);
   // }
 
-  function handleOnFolderClick() {
+  function handleOnFolderClick(event) {
     const { folderPath } = event.target.dataset;
     setActiveFolder(folderPath);
     setNextCursor(undefined);
@@ -71,7 +69,7 @@ export default function Photography({
 
       setNextCursor(updatedNextCursor);
     })();
-  }, [activeFolder]);
+  }, [activeFolder, nextCursor]);
 
   return (
     // eslint-disable-next-line react/jsx-filename-extension
@@ -100,10 +98,12 @@ export default function Photography({
               <a href={image.link} rel="noreferrer">
                 <div className={styles.imageImage}>
                   <Image
-                    width={image.width / 2}
-                    height={image.height / 2}
+                    width={image.width}
+                    height={image.height}
                     src={image.image}
                     alt=""
+                    layout="responsive"
+                    className={styles.individualImage}
                   />
                 </div>
                 {/* <h3 className={styles.imageTitle}>{image.title}</h3> */}
@@ -130,8 +130,6 @@ export async function getStaticProps() {
   const images = mapImageResources(resources);
 
   const { folders } = await getPhotographyFolders();
-
-  console.log('folders:', folders);
 
   return {
     props: {
