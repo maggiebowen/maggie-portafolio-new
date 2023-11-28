@@ -77,41 +77,44 @@ export default function Photography({
       <h1 className={styles.pageTitle}>Photography</h1>
       <Navigation />
 
-      <h2 className={styles.header}>Folders</h2>
+      <div className={styles.padding}>
+        <h2 className={styles.header}>Folders</h2>
+        <ul className={styles.folders} onClick={handleOnFolderClick}>
+          {folders.map((folder) => {
+            return (
+              <li key={folder.path}>
+                <button data-folder-path={folder.path}>{folder.name}</button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
 
-      <ul className={styles.folders} onClick={handleOnFolderClick}>
-        {folders.map((folder) => {
-          return (
-            <li key={folder.path}>
-              <button data-folder-path={folder.path}>{folder.name}</button>
-            </li>
-          );
-        })}
-      </ul>
+      <div className={styles.padding}>
+        <h2 className={styles.header}>Images</h2>
 
-      <h2 className={styles.header}>Images</h2>
-
-      <ul className={styles.images}>
-        {images.map((image) => {
-          return (
-            <li key={image.id}>
-              <a href={image.link} rel="noreferrer">
-                <div className={styles.imageImage}>
-                  <Image
-                    width={image.width}
-                    height={image.height}
-                    src={image.image}
-                    alt=""
-                    layout="responsive"
-                    className={styles.individualImage}
-                  />
-                </div>
-                {/* <h3 className={styles.imageTitle}>{image.title}</h3> */}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+        <ul className={styles.images}>
+          {images.map((image) => {
+            return (
+              <li key={image.id}>
+                <a href={image.link} rel="noreferrer">
+                  <div className={styles.imageImage}>
+                    <Image
+                      width={image.width}
+                      height={image.height}
+                      src={image.image}
+                      alt=""
+                      layout="responsive"
+                      className={styles.individualImage}
+                    />
+                  </div>
+                  {/* <h3 className={styles.imageTitle}>{image.title}</h3> */}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
 
       {/* <button onClick={handleLoadMore} type="button" className={styles.loadMoreBtn}>
         Load More

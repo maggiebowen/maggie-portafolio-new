@@ -25,7 +25,7 @@ function Home() {
             }}
           />
         </div>
-        <main className={styles.main}>
+        <main className={styles.homePage}>
           <h1 className={styles.title}>
             <Link href="/">Maggie Bowen</Link>
           </h1>

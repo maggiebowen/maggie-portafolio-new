@@ -10,7 +10,7 @@
   z-index: -1;
 }
 
-.resumeBtn {
+.btnWPadding {
   color: #fff;
   background-color: #ff0088;
   border-radius: 10px;
@@ -20,41 +20,13 @@
   margin: 0 1rem;
 }
 
-.circleContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  margin: 4rem;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #ff0000;
-  transition: all 0.25s ease;
-  padding: 10px;
-}
-
-/* CIRCLE HOVERS */
-.circle:hover {
-  padding: 20%;
-  margin-top: -20px;
-  margin-left: -20px;
-  cursor: pointer;
-}
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main {
+.homePage {
   min-height: 100vh;
   padding: 5% 0 0;
   flex: 1;
@@ -103,6 +75,16 @@
   color: #fff;
 }
 
+.descriptionText {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.descriptionText a {
+  text-decoration: underline;
+  color: #ff0088;
+}
+
 .secondaryPage {
   color: #fff;
   background-color: #111;
@@ -141,21 +123,14 @@
   font-size: 1.5rem;
 }
 
-.imageGrid {
-  margin-top: 5%;
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-}
-
-.apiImages {
-  border-radius: 20px;
-}
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.padding {
+  padding: 5%;
 }
 
 .folders {
@@ -212,7 +187,12 @@
 
 .individualImage {
   border-radius: 10px;
+  transform: 0.2s;
 }
+
+/* .individualImage:hover { 
+  transform: scale(1.25); 
+} */
 
 .imageTitle {
   font-size: 1.4em;
