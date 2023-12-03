@@ -65,10 +65,12 @@ function about() {
         </p>
         <p>
           In her free time Maggie plays the guitar and sings, takes film photos, skateboards, surfs,
-          rock climbs, writes, and illustrates. She considers herself a jack-of-all-trades type of
-          artist. She can animate in 2D and 3D (in Procreate/After Effects and Maya respectively),
-          edit photos and videos in the Adobe suite, design ink and watercolor illustrations, make
-          music, creatively write, and even design and code websites —including this one!
+          rock climbs, writes, and illustrates. She has learned Spanish through severl college
+          courses, private tutoring for 2.5 years, and through her patient friends. Now she's
+          studying Italian as well! She considers herself a jack-of-all-trades type of artist. She
+          can animate in 2D and 3D (in Procreate/After Effects and Maya respectively), edit photos
+          and videos in the Adobe suite, design ink and watercolor illustrations, make music,
+          creatively write, and even design and code websites —including this one!
         </p>
         <p>
           Maggie’s underlying passion has always been to create inclusive spaces for women and
