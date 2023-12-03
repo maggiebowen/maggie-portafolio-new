@@ -91,6 +91,7 @@ function about() {
           programming languages and make computer programming welcoming to everyone.
           <br />
           <br />
+          <br />
         </p>
       </div>
     </div>
