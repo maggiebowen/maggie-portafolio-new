@@ -2,7 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
+<<<<<<< HEAD
 import bgImg1 from './pics/maggie-with-camera.JPG';
+=======
+import bgImg1 from './pics/maggie-with-camera.JPG';
+>>>>>>> 77214d51301ae4a475164a3022e72ffe9260183c
 
 const abtImgStyle = {
   borderRadius: '5%',
@@ -17,7 +21,7 @@ function about() {
         About <Link href="/">Maggie</Link>
       </h1>
       <Navigation />
-{/* wait ah */}
+
       <div className={styles.textContainer}>
         <br />
         <div className={styles.aboutImg}>
