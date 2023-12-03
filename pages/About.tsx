@@ -17,7 +17,7 @@ function about() {
         About <Link href="/">Maggie</Link>
       </h1>
       <Navigation />
-
+{/* wait ah */}
       <div className={styles.textContainer}>
         <br />
         <div className={styles.aboutImg}>
