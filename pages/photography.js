@@ -16,7 +16,7 @@ export default function Photography({
   const [nextCursor, setNextCursor] = useState(defaultNextCursor);
   const [activeFolder, setActiveFolder] = useState('');
 
-  console.log('active folder:', activeFolder);
+  // console.log('active folder:', activeFolder);
 
   // console.log('images', images);
   // console.log('next cursor', nextCursor);
