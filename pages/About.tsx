@@ -37,7 +37,7 @@ function about() {
             rel="noreferrer"
           >
             {/* eslint-disable-next-line */}
-            <button className={styles.btnWPadding}>Check out Maggie's resume</button>
+            <button className={styles.btnWPadding}>Check out Maggie&apos;s resume</button>
           </a>
         </div>
         <p>
@@ -66,15 +66,15 @@ function about() {
         <p>
           In her free time Maggie plays the guitar and sings, takes film photos, skateboards, surfs,
           rock climbs, writes, and illustrates. She has learned Spanish through severl college
-          courses, private tutoring for 2.5 years, and through her patient friends. Now she's
+          courses, private tutoring for 2.5 years, and through her patient friends. Now she is
           studying Italian as well! She considers herself a jack-of-all-trades type of artist. She
           can animate in 2D and 3D (in Procreate/After Effects and Maya respectively), edit photos
           and videos in the Adobe suite, design ink and watercolor illustrations, make music,
           creatively write, and even design and code websites —including this one!
         </p>
         <p>
-          Maggie’s underlying passion has always been to create inclusive spaces for women and
-          LGBTQ+ folks in actions sports and computer programming. That’s why she has dedicated
+          Maggie&apos;s underlying passion has always been to create inclusive spaces for women and
+          LGBTQ+ folks in actions sports and computer programming. That&apos;s why she has dedicated
           years to creating and supporting chapters of Girls Who Code in her hometown and even
           created her own skateboarding community at USC,{' '}
           <a href="https://www.instagram.com/auntskatie/?hl=en">Aunt Skatie</a>, where she ran
@@ -83,7 +83,7 @@ function about() {
             <i>LA Times</i> article
           </a>{' '}
           about the Aunt Skatie community to learn more. In the past, Maggie has also volunteered
-          for other non-profits such as Compton Cowboys, God’s Kitchen, and Exposure Skate.
+          for other non-profits such as Compton Cowboys, God&apos;s Kitchen, and Exposure Skate.
         </p>
         <p>
           Inspired by her volunteer work and teaching positions, Maggie seeks a career which allows
