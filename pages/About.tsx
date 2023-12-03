@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import bgImg1 from 'public/pics/maggie-with-camera.JPG';
+import React from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 
@@ -20,7 +21,7 @@ function about() {
 
       <div className={styles.textContainer}>
         <br />
-        <div className={styles.aboutImg}>
+        {/* <div className={styles.aboutImg}>
           <Image
             alt="photo of Maggie at Joshua Tree National Park"
             src={bgImg1}
@@ -28,7 +29,7 @@ function about() {
             quality={100}
             style={abtImgStyle}
           />
-        </div>
+        </div> */}
         <br />
         <div className={styles.center}>
           <a
@@ -89,7 +90,6 @@ function about() {
           Inspired by her volunteer work and teaching positions, Maggie seeks a career which allows
           her to develop software that can be utilized by students to learn new languages, including
           programming languages and make computer programming welcoming to everyone.
-          <br />
           <br />
           <br />
         </p>
