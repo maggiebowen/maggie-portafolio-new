@@ -1,12 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import bgImg1 from 'public/pics/maggie-with-camera.JPG';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
-<<<<<<< HEAD
-import bgImg1 from './pics/maggie-with-camera.JPG';
-=======
-import bgImg1 from './pics/maggie-with-camera.JPG';
->>>>>>> 77214d51301ae4a475164a3022e72ffe9260183c
 
 const abtImgStyle = {
   borderRadius: '5%',
