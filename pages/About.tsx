@@ -1,15 +1,15 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
-import bgImg1 from 'public/pics/maggie-with-camera.JPG';
+// import bgImg1 from 'public/pics/maggie-with-camera.JPG';
 import React from 'react';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 
-const abtImgStyle = {
-  borderRadius: '5%',
-  width: '70%',
-  height: '70%',
-};
+// const abtImgStyle = {
+//   borderRadius: '5%',
+//   width: '70%',
+//   height: '70%',
+// };
 
 function about() {
   return (
