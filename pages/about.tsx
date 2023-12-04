@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import bgImg1 from 'public/pics/maggie-with-camera.JPG';
+import bgImg1 from 'public/pics/maggie-w-monet.jpg';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 
 const abtImgStyle = {
   borderRadius: '5%',
-  width: '70%',
-  height: '70%',
+  width: '50%',
+  height: '50%',
 };
 
 function about() {
@@ -64,11 +64,11 @@ function about() {
         </p>
         <p>
           In her free time Maggie plays the guitar and sings, takes film photos, skateboards, surfs,
-          rock climbs, writes, and illustrates. She has learned Spanish through severl college
-          courses, private tutoring for 2.5 years, and through her patient friends. Now she is
+          rock climbs, writes, and illustrates. She has learned Spanish through college courses, 2.5
+          years of private tutoring &#40;still on-going, and through her patient friends. Now she is
           studying Italian as well! She considers herself a jack-of-all-trades type of artist. She
-          can animate in 2D and 3D (in Procreate/After Effects and Maya respectively), edit photos
-          and videos in the Adobe suite, design ink and watercolor illustrations, make music,
+          can animate in 2D and 3D &#40;in Procreate/After Effects and Maya respectively&#41;, edit
+          photos and videos in the Adobe suite, design ink and watercolor illustrations, make music,
           creatively write, and even design and code websites —including this one!
         </p>
         <p>
