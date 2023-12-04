@@ -4,8 +4,8 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
+import { getPhotographyFolders, mapImageResources, search } from './api/cloudinary';
 import Navigation from './components/Navigation';
-import { getPhotographyFolders, mapImageResources, search } from './lib/cloudinary';
 
 export default function Photography({
   images: defaultImages,

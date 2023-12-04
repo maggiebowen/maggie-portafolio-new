@@ -1,11 +1,11 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
+import { getVisualArtFolders, mapImageResources, search } from './api/cloudinary';
 import Navigation from './components/Navigation';
-import { getVisualArtFolders, mapImageResources, search } from './lib/cloudinary';
 
 export default function VisualArt({
   images: defaultImages,
