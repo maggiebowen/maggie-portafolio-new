@@ -20,6 +20,7 @@ function about() {
       <Navigation />
 
       <div className={styles.textContainer}>
+        can it register about page changes?
         <br />
         {/* <div className={styles.aboutImg}>
           <Image
