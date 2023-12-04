@@ -33,6 +33,7 @@ function Home() {
           <p className={styles.description}>
             <i>
               <b>Artist, Coder, Teacher</b>
+              testing buildddddddd
             </i>
           </p>
           <Navigation />
