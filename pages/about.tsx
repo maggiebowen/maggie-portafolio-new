@@ -1,15 +1,14 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
-// import bgImg1 from 'public/pics/maggie-with-camera.JPG';
-import React from 'react';
+import bgImg1 from 'public/pics/maggie-with-camera.JPG';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 
-// const abtImgStyle = {
-//   borderRadius: '5%',
-//   width: '70%',
-//   height: '70%',
-// };
+const abtImgStyle = {
+  borderRadius: '5%',
+  width: '70%',
+  height: '70%',
+};
 
 function about() {
   return (
@@ -20,17 +19,15 @@ function about() {
       <Navigation />
 
       <div className={styles.textContainer}>
-        can it register about page changes?
         <br />
-        {/* <div className={styles.aboutImg}>
+        <div className={styles.aboutImg}>
           <Image
             alt="photo of Maggie at Joshua Tree National Park"
             src={bgImg1}
-            placeholder="blur"
             quality={100}
             style={abtImgStyle}
           />
-        </div> */}
+        </div>
         <br />
         <div className={styles.center}>
           <a
