@@ -13,7 +13,10 @@ function about() {
   return (
     <div className={styles.secondaryPage}>
       <h1 className={styles.pageTitle}>
-        About <a href="https://www.linkedin.com/in/margaret-bowen/">Maggie</a>
+        About{' '}
+        <a href="https://www.linkedin.com/in/margaret-bowen/" target="_blank" rel="noreferrer">
+          Maggie
+        </a>
       </h1>
       <Navigation />
 
