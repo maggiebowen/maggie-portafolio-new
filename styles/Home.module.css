@@ -69,6 +69,11 @@
   font-size: 3rem;
 }
 
+.pageTitle a{
+  text-decoration: underline;
+  color: #ff0088;
+}
+
 .title,
 .description {
   text-align: center;
@@ -88,7 +93,6 @@
 .secondaryPage {
   color: #fff;
   background-color: #111;
-  height: 100%;
 }
 
 .textContainer {
@@ -104,6 +108,25 @@
 .textContainer a {
   text-decoration: underline;
   color: #ff0088;
+}
+
+.textContainer4AS {
+  font-size: 1rem;
+  text-align: left;
+  border-radius: 35px;
+  margin: 0 4em;
+  line-height: 1.3;
+  text-indent: 5%;
+  width: 80%;
+}
+
+.textContainer4AS a {
+  text-decoration: underline;
+  color: #ff0088;
+}
+
+.textContainer4AS h3 {
+  text-align: left;
 }
 
 .projectsContainer {

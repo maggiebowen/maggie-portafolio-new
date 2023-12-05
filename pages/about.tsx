@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import bgImg1 from 'public/pics/maggie-w-monet.jpg';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
@@ -14,7 +13,7 @@ function about() {
   return (
     <div className={styles.secondaryPage}>
       <h1 className={styles.pageTitle}>
-        About <Link href="/">Maggie</Link>
+        About <a href="https://www.linkedin.com/in/margaret-bowen/">Maggie</a>
       </h1>
       <Navigation />
 
