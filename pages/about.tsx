@@ -66,10 +66,11 @@ function about() {
         </p>
         <p>
           In her free time Maggie plays the guitar and sings, takes film photos, skateboards, surfs,
-          rock climbs, writes, and illustrates. She has learned Spanish through college courses, 2.5
-          years of private tutoring &#40;still on-going, and through her patient friends. Now she is
-          studying Italian as well! She considers herself a jack-of-all-trades type of artist. She
-          can animate in 2D and 3D &#40;in Procreate/After Effects and Maya respectively&#41;, edit
+          rock climbs, writes, and illustrates&#92;paints. She speaks fluent Spanish. She has
+          learned Spanish in college courses, through 2.5 years of private tutoring &#40;still
+          on-going&#41;, and most especially through her patient friends. Now she is studying
+          Italian as well! She considers herself a jack-of-all-trades type of artist. She can
+          animate in 2D and 3D &#40;in Procreate/After Effects and Maya respectively&#41;, edit
           photos and videos in the Adobe suite, design ink and watercolor illustrations, make music,
           creatively write, and even design and code websites —including this one!
         </p>
