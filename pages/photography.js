@@ -110,7 +110,6 @@ export default function Photography({
                   </div>
                   {/* <h3 className={styles.imageTitle}>{image.title}</h3> */}
                 </a>
-                plzzz
               </li>
             );
           })}
