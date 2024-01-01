@@ -9,7 +9,15 @@ function filmmaking() {
       <br />
       <h3>Animation</h3>
       <h3>Comedy</h3>
-      <h3>Thesis film</h3>
+      <h3 className={styles.descriptionText}>
+        <a
+          href="https://www.instagram.com/auntskatie/reel/CeAFaJ6pyvQ/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Thesis film
+        </a>
+      </h3>
     </div>
   );
 }
