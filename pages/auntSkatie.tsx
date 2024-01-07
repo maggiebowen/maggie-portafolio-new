@@ -16,7 +16,7 @@ function auntSkatie() {
           LGBTQ+ folks into the sport of skateboarding! We try to build a safe and inclusive
           environment for all skaters by running skate clinics, group meetups and excursions, and
           sometimes even parties. There&apos;s no cost to join, no limit to who can come &#40;even
-          male allies can come support!&#41;, and no better time to join in.
+          male allies can come support!&#41;, and no better time to get involved.
         </p>
         <br />
         <h1>INCLUDE LA Times ARTICLE!!</h1>
