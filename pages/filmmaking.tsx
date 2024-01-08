@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 import YoutubeEmbed from './components/YoutubeEmbed';
@@ -60,7 +61,7 @@ function filmmaking() {
           one in the class to make her car take flight off of one of the objects, rather than just
           simply navigating the table and making small turns.
         </p>
-        <h3>Comedy</h3>
+        {/* <h3>Comedy</h3> */}
         <h3 className={styles.descriptionText}>
           <a
             href="https://www.instagram.com/auntskatie/reel/CeAFaJ6pyvQ/?hl=en"
@@ -70,6 +71,16 @@ function filmmaking() {
             Thesis film
           </a>
         </h3>
+        <p>
+          As a part of her Narrative Studies major, Maggie wrote her thesis about the advent of
+          skateboarding videos as both a means of advertising companies which sold skateboarding
+          equipment and as a means of disseminating skateboarding tricks, style, and culture. To
+          actualize her theoretical paper, Maggie created her own skate video for her women and
+          LGBTQ+ skateboarding crew, <Link href="/auntSkatie">Aunt Skatie</Link>. The short film
+          includes footage shot by Maggie on a Super 8 analog film camera and a DSLR Cannon camera.
+          The short film features many other LA-based groups similar to Aunt Skatie and two original
+          songs written by Maggie&#39;s songwriting classmates.
+        </p>
       </div>
     </div>
   );
