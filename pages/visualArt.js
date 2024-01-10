@@ -7,19 +7,13 @@ import styles from '../styles/Home.module.css';
 import { getVisualArtFolders, mapImageResources, search } from './api/cloudinary';
 import Navigation from './components/Navigation';
 
-export default function VisualArt({
-  images: defaultImages,
-  nextCursor: defaultNextCursor,
-  folders,
-}) {
+export default function VisualArt({ images: defaultImages, folders }) {
   const [images, setImages] = useState(defaultImages);
-  const [nextCursor, setNextCursor] = useState(defaultNextCursor);
   const [activeFolder, setActiveFolder] = useState('visual-art');
 
   function handleOnFolderClick(event) {
     const { folderPath } = event.target.dataset;
     setActiveFolder(folderPath);
-    setNextCursor(undefined);
     setImages([]);
   }
 
@@ -28,22 +22,19 @@ export default function VisualArt({
       const results = await fetch('/api/search', {
         method: 'POST',
         body: JSON.stringify({
-          nextCursor,
           expression: `folder="${activeFolder}"`,
         }),
       }).then((r) => r.json());
 
-      const { resources, next_cursor: updatedNextCursor } = results;
+      const { resources } = results;
 
       const images = mapImageResources(resources);
 
       setImages((prev) => {
         return [...prev, ...images];
       });
-
-      setNextCursor(updatedNextCursor);
     })();
-  }, [activeFolder, nextCursor]);
+  }, [activeFolder]);
 
   return (
     // eslint-disable-next-line react/jsx-filename-extension
@@ -98,7 +89,7 @@ export async function getStaticProps() {
     expression: 'folder=""',
   });
 
-  const { resources, next_cursor: nextCursor } = results;
+  const { resources } = results;
 
   const images = mapImageResources(resources);
 
@@ -107,7 +98,6 @@ export async function getStaticProps() {
   return {
     props: {
       images,
-      nextCursor: nextCursor || false,
       folders,
     },
   };

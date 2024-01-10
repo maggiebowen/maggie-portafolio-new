@@ -7,45 +7,17 @@ import styles from '../styles/Home.module.css';
 import { getPhotographyFolders, mapImageResources, search } from './api/cloudinary';
 import Navigation from './components/Navigation';
 
-export default function Photography({
-  images: defaultImages,
-  // nextCursor: defaultNextCursor,
-  folders,
-}) {
+export default function Photography({ images: defaultImages, folders }) {
   const [images, setImages] = useState(defaultImages);
-  // const [nextCursor, setNextCursor] = useState(defaultNextCursor);
   const [activeFolder, setActiveFolder] = useState('');
 
   // console.log('active folder:', activeFolder);
 
   // console.log('images', images);
-  // console.log('next cursor', nextCursor);
-
-  // async function handleLoadMore(event) {
-  //   event.preventDefault();
-  //   const results = await fetch('/api/search', {
-  //     method: 'POST',
-  //     body: JSON.stringify({
-  //       nextCursor,
-  //       expression: `folder="${activeFolder}"`,
-  //     }),
-  //   }).then((r) => r.json());
-
-  //   const { resources, next_cursor: updatedNextCursor } = results;
-
-  //   const images = mapImageResources(resources);
-
-  //   setImages((prev) => {
-  //     return [...prev, ...images];
-  //   });
-
-  //   setNextCursor(updatedNextCursor);
-  // }
 
   function handleOnFolderClick(event) {
     const { folderPath } = event.target.dataset;
     setActiveFolder(folderPath);
-    // setNextCursor(undefined);
     setImages([]);
   }
 
@@ -54,7 +26,6 @@ export default function Photography({
       const results = await fetch('/api/search', {
         method: 'POST',
         body: JSON.stringify({
-          // nextCursor,
           expression: `folder="${activeFolder}"`,
         }),
       }).then((r) => r.json());
@@ -66,8 +37,6 @@ export default function Photography({
       setImages((prev) => {
         return [...prev, ...images];
       });
-
-      // setNextCursor(updatedNextCursor);
     })();
   }, [activeFolder]);
 
@@ -115,10 +84,6 @@ export default function Photography({
           })}
         </ul>
       </div>
-
-      {/* <button onClick={handleLoadMore} type="button" className={styles.loadMoreBtn}>
-        Load More
-      </button> */}
     </div>
   );
 }
@@ -128,7 +93,7 @@ export async function getStaticProps() {
     expression: 'folder=""',
   });
 
-  const { resources, next_cursor: nextCursor } = results;
+  const { resources } = results;
 
   const images = mapImageResources(resources);
 
@@ -137,7 +102,6 @@ export async function getStaticProps() {
   return {
     props: {
       images,
-      nextCursor: nextCursor || false,
       folders,
     },
   };
