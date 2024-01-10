@@ -1,40 +1,5 @@
 /* eslint-disable import/prefer-default-export */
 
-// export async function search(options = {}) {
-//   try {
-//     const params = {
-//       ...options,
-//     };
-
-//     if (options.nextCursor) {
-//       params.next_cursor = options.nextCursor;
-//       delete params.nextCursor;
-//     }
-
-//     const paramString = Object.keys(params)
-//       .map((key) => `${key}=${encodeURIComponent(params[key])}`)
-//       .join('&');
-
-//     const results = await fetch(
-//       `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/search?${paramString}`,
-//       {
-//         headers: {
-//           Authorization: `Basic ${Buffer.from(
-//             `${process.env.CLOUDINARY_API_KEY}:${process.env.CLOUDINARY_API_SECRET}`,
-//           ).toString('base64')}`,
-//         },
-//       },
-//     ).then((r) => r.json());
-
-//     return results;
-//   } catch (error) {
-//     // Handle the error here, you can log it or perform any other necessary actions
-//     console.error('An error occurred in the search function:', error);
-//     // You may choose to throw the error again or return a default value
-//     throw error;
-//   }
-// }
-
 export async function search(options = {}) {
   const params = {
     ...options,
@@ -50,11 +15,11 @@ export async function search(options = {}) {
     .join('&');
   console.log('Request Payload:', paramString);
   const results = await fetch(
-    `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/search?${paramString}`,
+    `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/resources/search?${paramString}`,
     {
       headers: {
         Authorization: `Basic ${Buffer.from(
-          `${process.env.CLOUDINARY_API_KEY}:${process.env.CLOUDINARY_API_SECRET}`,
+          `${process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY}:${process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET}`,
         ).toString('base64')}`,
       },
     },
@@ -78,11 +43,11 @@ export function mapImageResources(resources) {
 
 export async function getPhotographyFolders() {
   const response = await fetch(
-    `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/folders/photography`,
+    `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/folders/photography`,
     {
       headers: {
         Authorization: `Basic ${Buffer.from(
-          `${process.env.CLOUDINARY_API_KEY}:${process.env.CLOUDINARY_API_SECRET}`,
+          `${process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY}:${process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET}`,
         ).toString('base64')}`,
       },
     },
@@ -93,11 +58,11 @@ export async function getPhotographyFolders() {
 
 export async function getVisualArtFolders() {
   const response = await fetch(
-    `https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/folders/visual-art`,
+    `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/folders/visual-art`,
     {
       headers: {
         Authorization: `Basic ${Buffer.from(
-          `${process.env.CLOUDINARY_API_KEY}:${process.env.CLOUDINARY_API_SECRET}`,
+          `${process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY}:${process.env.NEXT_PUBLIC_CLOUDINARY_API_SECRET}`,
         ).toString('base64')}`,
       },
     },
