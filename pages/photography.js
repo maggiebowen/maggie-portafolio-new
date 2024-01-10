@@ -9,11 +9,11 @@ import Navigation from './components/Navigation';
 
 export default function Photography({
   images: defaultImages,
-  nextCursor: defaultNextCursor,
+  // nextCursor: defaultNextCursor,
   folders,
 }) {
   const [images, setImages] = useState(defaultImages);
-  const [nextCursor, setNextCursor] = useState(defaultNextCursor);
+  // const [nextCursor, setNextCursor] = useState(defaultNextCursor);
   const [activeFolder, setActiveFolder] = useState('');
 
   // console.log('active folder:', activeFolder);
@@ -45,7 +45,7 @@ export default function Photography({
   function handleOnFolderClick(event) {
     const { folderPath } = event.target.dataset;
     setActiveFolder(folderPath);
-    setNextCursor(undefined);
+    // setNextCursor(undefined);
     setImages([]);
   }
 
@@ -54,12 +54,12 @@ export default function Photography({
       const results = await fetch('/api/search', {
         method: 'POST',
         body: JSON.stringify({
-          nextCursor,
+          // nextCursor,
           expression: `folder="${activeFolder}"`,
         }),
       }).then((r) => r.json());
 
-      const { resources, next_cursor: updatedNextCursor } = results;
+      const { resources } = results;
 
       const images = mapImageResources(resources);
 
@@ -67,9 +67,9 @@ export default function Photography({
         return [...prev, ...images];
       });
 
-      setNextCursor(updatedNextCursor);
+      // setNextCursor(updatedNextCursor);
     })();
-  }, [activeFolder, nextCursor]);
+  }, [activeFolder]);
 
   return (
     // eslint-disable-next-line react/jsx-filename-extension
