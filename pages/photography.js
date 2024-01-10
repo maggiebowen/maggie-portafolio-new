@@ -1,7 +1,8 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/prop-types */
-import Image from 'next/image';
+// import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import { getPhotographyFolders, mapImageResources, search } from './api/cloudinary';
@@ -68,7 +69,7 @@ export default function Photography({ images: defaultImages, folders }) {
               <li key={image.id}>
                 <a href={image.link} rel="noreferrer">
                   <div className={styles.imageImage}>
-                    <Image
+                    <CldImage
                       width={image.width}
                       height={image.height}
                       src={image.image}
