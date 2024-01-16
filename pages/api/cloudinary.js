@@ -5,15 +5,15 @@ export async function search(options = {}) {
     ...options,
   };
 
-  if (options.nextCursor) {
-    params.next_cursor = options.nextCursor;
-    delete params.nextCursor;
-  }
+  // if (options.nextCursor) {
+  //   params.next_cursor = options.nextCursor;
+  //   delete params.nextCursor;
+  // }
 
   const paramString = Object.keys(params)
     .map((key) => `${key}=${encodeURIComponent(params[key])}`)
     .join('&');
-  console.log('Request Payload:', paramString);
+  // console.log('Request Payload:', paramString);
   const results = await fetch(
     `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/resources/search?${paramString}`,
     {
@@ -24,7 +24,7 @@ export async function search(options = {}) {
       },
     },
   ).then((r) => r.json());
-
+  console.log(results);
   return results;
 }
 

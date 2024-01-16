@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
 import bgImg from 'public/pics/surf-background-cover-page.jpg';
 import styles from '../styles/Home.module.css';
