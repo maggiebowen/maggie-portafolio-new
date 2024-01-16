@@ -5,11 +5,6 @@ export async function search(options = {}) {
     ...options,
   };
 
-  // if (options.nextCursor) {
-  //   params.next_cursor = options.nextCursor;
-  //   delete params.nextCursor;
-  // }
-
   const paramString = Object.keys(params)
     .map((key) => `${key}=${encodeURIComponent(params[key])}`)
     .join('&');
@@ -24,7 +19,7 @@ export async function search(options = {}) {
       },
     },
   ).then((r) => r.json());
-  console.log(results);
+  // console.log(results);
   return results;
 }
 

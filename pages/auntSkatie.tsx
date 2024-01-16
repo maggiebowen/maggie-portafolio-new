@@ -10,7 +10,28 @@ function auntSkatie() {
       <br />
       <div className={styles.textContainer4AS}>
         <br />
-        <h3>Mission</h3>
+        <h1>Media</h1>
+        <h3>
+          <a href="https://www.latimes.com/sports/story/2021-12-08/women-lgbtq-community-skateboarding-culture">
+            LA Times
+          </a>
+          {'   '}
+          ||{'   '}
+          <a href="https://bigfootskatemag.com/cotm-your-cool-aunt-skatie/">
+            Big Foot Skate Magazine
+          </a>
+          {'   '}
+          ||{'   '}
+          <a href="https://www.losangelesblade.com/2021/12/31/no-posers-allowed-inside-a-sesh-with-aunt-skatie/">
+            Los Angeles Blade
+          </a>
+          {'   '}
+          || <a href="https://www.instagram.com/auntskatie/?hl=en">Aunt Skatie Instagram</a>
+        </h3>
+        {/* https://www.instagram.com/reel/B7Hgl5TlBjO/?hl=en */}
+        {/* https://www.instagram.com/auntskatie/?hl=en */}
+        <br />
+        <h1>Mission</h1>
         <p>
           Aunt Skatie is a skateboarding club that&apos;s mission is to welcome more women and
           LGBTQ+ folks into the sport of skateboarding! We try to build a safe and inclusive
@@ -19,8 +40,7 @@ function auntSkatie() {
           male allies can come support!&#41;, and no better time to get involved.
         </p>
         <br />
-        <h1>INCLUDE LA Times ARTICLE!!</h1>
-        <h3>Origins</h3>
+        <h1>Origins</h1>
         <p>
           Aunt Skatie was started in the fall of 2019 by{' '}
           <a href="https://www.linkedin.com/in/margaret-bowen/">Maggie Bowen</a>, a USC
@@ -39,11 +59,6 @@ function auntSkatie() {
           Aunt Skatie. Maggie&apos;s cool Aunt Katie and Katie Korneta served as the inspiration for
           the name.
         </p>
-        <br />
-        <h3>Media</h3>
-        {/* https://www.instagram.com/reel/B7Hgl5TlBjO/?hl=en */}
-        {/* https://www.instagram.com/auntskatie/?hl=en */}
-        <br />
       </div>
     </div>
   );

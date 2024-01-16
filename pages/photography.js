@@ -12,10 +12,6 @@ export default function Photography({ images: defaultImages, folders }) {
   const [images, setImages] = useState(defaultImages);
   const [activeFolder, setActiveFolder] = useState('');
 
-  // console.log('active folder:', activeFolder);
-
-  // console.log('images', images);
-
   function handleOnFolderClick(event) {
     const { folderPath } = event.target.dataset;
     setActiveFolder(folderPath);

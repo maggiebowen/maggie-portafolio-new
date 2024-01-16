@@ -120,7 +120,8 @@
   font-size: 1rem;
   text-align: left;
   border-radius: 35px;
-  margin: 0 4em;
+  margin-left: 5%;
+  margin-right: 5%;
   line-height: 1.3;
   text-indent: 5%;
   width: 80%;
@@ -145,8 +146,8 @@
 .filmmakingContainer {
   align-items: center;
   text-align: center;
-  margin-left:20%;
-  margin-right:20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .aboutImg {
