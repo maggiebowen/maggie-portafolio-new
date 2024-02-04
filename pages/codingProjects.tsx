@@ -56,8 +56,9 @@ function codingProjects() {
 
       <h2>About this site:</h2>
       <p className={styles.descriptionText}>
-        This website was programmed in the Javascript framework Typescript. On the Photography and
-        Visual Art pages you can see it makes use of the{' '}
+        This website was programmed by Maggie using Typescript, a language which builds on
+        Javascript, and React, a Javascript library. On the Photography and Visual Art pages you can
+        see it makes use of the{' '}
         <a
           href="https://cloudinary.com/documentation/image_upload_api_reference"
           target="_blank"
