@@ -19,12 +19,31 @@ function filmmaking() {
           Maggie&#39;s Youtube channel was a way for her to explore emerging research which sparked
           her curiosity and practice stop motion animation.
         </p>
+        <h3 className={styles.descriptionText}>
+          <a
+            href="https://www.instagram.com/auntskatie/reel/CeAFaJ6pyvQ/?hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Thesis film
+          </a>
+        </h3>
+        <p>
+          As a part of her Narrative Studies major, Maggie wrote her thesis about the advent of
+          skateboarding videos as both a means of advertising companies which sold skateboarding
+          equipment and as a means of disseminating skateboarding tricks, style, and culture. To
+          actualize her theoretical paper, Maggie created her own skate video for her women and
+          LGBTQ+ skateboarding crew, <Link href="/auntSkatie">Aunt Skatie</Link>. The short film
+          includes footage shot by Maggie on a Super 8 analog film camera and a DSLR Cannon camera.
+          The short film features many other LA-based groups similar to Aunt Skatie and two original
+          songs written by Maggie&#39;s songwriting classmates.
+        </p>
         <h3>Animations:</h3>
         <div>
           <YoutubeEmbed embedId="P2v3-RXtseM" />
         </div>
         <p>
-          This animation is based off of the poem{' '}
+          This 2D animation is based off of the poem{' '}
           <a
             href="https://dwwproject2012.weebly.com/loose-woman.html"
             target="_blank"
@@ -62,25 +81,6 @@ function filmmaking() {
           simply navigating the table and making small turns.
         </p>
         {/* <h3>Comedy</h3> */}
-        <h3 className={styles.descriptionText}>
-          <a
-            href="https://www.instagram.com/auntskatie/reel/CeAFaJ6pyvQ/?hl=en"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Thesis film
-          </a>
-        </h3>
-        <p>
-          As a part of her Narrative Studies major, Maggie wrote her thesis about the advent of
-          skateboarding videos as both a means of advertising companies which sold skateboarding
-          equipment and as a means of disseminating skateboarding tricks, style, and culture. To
-          actualize her theoretical paper, Maggie created her own skate video for her women and
-          LGBTQ+ skateboarding crew, <Link href="/auntSkatie">Aunt Skatie</Link>. The short film
-          includes footage shot by Maggie on a Super 8 analog film camera and a DSLR Cannon camera.
-          The short film features many other LA-based groups similar to Aunt Skatie and two original
-          songs written by Maggie&#39;s songwriting classmates.
-        </p>
       </div>
     </div>
   );
