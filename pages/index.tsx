@@ -16,7 +16,7 @@ function Home() {
       <div>
         <div className={styles.bgWrap}>
           <Image
-            alt="photo of Maggie surfing"
+            alt='photo of Maggie surfing'
             src={bgImg}
             quality={100}
             fill
@@ -27,7 +27,7 @@ function Home() {
         </div>
         <main className={styles.homePage}>
           <h1 className={styles.title}>
-            <Link href="/">Maggie Bowen</Link>
+            <Link href='/'>Maggie Bowen</Link>
           </h1>
           <p className={styles.description}>
             <i>

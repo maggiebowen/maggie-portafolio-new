@@ -11,9 +11,11 @@ function filmmaking() {
         <Navigation />
         <br />
         <h3>Youtube Channel:</h3>
-        <a href="https://www.youtube.com/@CuriosityList" target="_blank" rel="noreferrer">
+        <a href='https://www.youtube.com/@CuriosityList' target='_blank' rel='noreferrer'>
           {/* eslint-disable-next-line */}
-          <button className={styles.btnWPadding}>Curiosity List</button>
+          <button type='button' className={styles.btnWPadding}>
+            Curiosity List
+          </button>
         </a>
         <p>
           Maggie&#39;s Youtube channel was a way for her to explore emerging research which sparked
@@ -21,9 +23,9 @@ function filmmaking() {
         </p>
         <h3 className={styles.descriptionText}>
           <a
-            href="https://www.instagram.com/auntskatie/reel/CeAFaJ6pyvQ/?hl=en"
-            target="_blank"
-            rel="noreferrer"
+            href='https://www.instagram.com/auntskatie/reel/CeAFaJ6pyvQ/?hl=en'
+            target='_blank'
+            rel='noreferrer'
           >
             Thesis film
           </a>
@@ -33,21 +35,21 @@ function filmmaking() {
           skateboarding videos as both a means of advertising companies which sold skateboarding
           equipment and as a means of disseminating skateboarding tricks, style, and culture. To
           actualize her theoretical paper, Maggie created her own skate video for her women and
-          LGBTQ+ skateboarding crew, <Link href="/auntSkatie">Aunt Skatie</Link>. The short film
+          LGBTQ+ skateboarding crew, <Link href='/auntSkatie'>Aunt Skatie</Link>. The short film
           includes footage shot by Maggie on a Super 8 analog film camera and a DSLR Cannon camera.
           The short film features many other LA-based groups similar to Aunt Skatie and two original
           songs written by Maggie&#39;s songwriting classmates.
         </p>
         <h3>Animations:</h3>
         <div>
-          <YoutubeEmbed embedId="P2v3-RXtseM" />
+          <YoutubeEmbed embedId='P2v3-RXtseM' />
         </div>
         <p>
           This 2D animation is based off of the poem{' '}
           <a
-            href="https://dwwproject2012.weebly.com/loose-woman.html"
-            target="_blank"
-            rel="noreferrer"
+            href='https://dwwproject2012.weebly.com/loose-woman.html'
+            target='_blank'
+            rel='noreferrer'
           >
             <q>Loose Woman</q>
           </a>{' '}
@@ -57,12 +59,12 @@ function filmmaking() {
         </p>
         <br />
         <div>
-          <YoutubeEmbed embedId="Yx16roDuRHY" />
+          <YoutubeEmbed embedId='Yx16roDuRHY' />
         </div>
         <p>This assignment was a final exam made for Maggie&#39;s After Effects class, ART 461.</p>
         <br />
         <div>
-          <YoutubeEmbed embedId="EIU-GEv_428" />
+          <YoutubeEmbed embedId='EIU-GEv_428' />
         </div>
         <p>
           This assignment was made for Maggie&#39;s After Effects class in order to practice
@@ -70,7 +72,7 @@ function filmmaking() {
         </p>
         <br />
         <div>
-          <YoutubeEmbed embedId="AH3tMnZOHLU" />
+          <YoutubeEmbed embedId='AH3tMnZOHLU' />
         </div>
         <p>
           The following is a short animation done in 3D using Maya. This was for the class ITP 215L

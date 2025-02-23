@@ -42,7 +42,9 @@ export default function VisualArt({ images: defaultImages, folders }) {
           {folders.map((folder) => {
             return (
               <li key={folder.path}>
-                <button data-folder-path={folder.path}>{folder.name}</button>
+                <button type='button' data-folder-path={folder.path}>
+                  {folder.name}
+                </button>
               </li>
             );
           })}
@@ -58,14 +60,14 @@ export default function VisualArt({ images: defaultImages, folders }) {
 
             return (
               <li key={image.id} className={imageClass}>
-                <a href={image.link} rel="noreferrer">
+                <a href={image.link} rel='noreferrer'>
                   <div className={styles.imageImage}>
                     <CldImage
                       width={image.width}
                       height={image.height}
                       src={image.image}
-                      alt=""
-                      layout="responsive"
+                      alt=''
+                      layout='responsive'
                       className={styles.individualImage}
                     />
                   </div>

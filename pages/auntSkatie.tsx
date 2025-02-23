@@ -12,21 +12,21 @@ function auntSkatie() {
         <br />
         <h1>Media</h1>
         <h3>
-          <a href="https://www.latimes.com/sports/story/2021-12-08/women-lgbtq-community-skateboarding-culture">
+          <a href='https://www.latimes.com/sports/story/2021-12-08/women-lgbtq-community-skateboarding-culture'>
             LA Times
           </a>
           {'   '}
           ||{'   '}
-          <a href="https://bigfootskatemag.com/cotm-your-cool-aunt-skatie/">
+          <a href='https://bigfootskatemag.com/cotm-your-cool-aunt-skatie/'>
             Big Foot Skate Magazine
           </a>
           {'   '}
           ||{'   '}
-          <a href="https://www.losangelesblade.com/2021/12/31/no-posers-allowed-inside-a-sesh-with-aunt-skatie/">
+          <a href='https://www.losangelesblade.com/2021/12/31/no-posers-allowed-inside-a-sesh-with-aunt-skatie/'>
             Los Angeles Blade
           </a>
           {'   '}
-          || <a href="https://www.instagram.com/auntskatie/?hl=en">Aunt Skatie Instagram</a>
+          || <a href='https://www.instagram.com/auntskatie/?hl=en'>Aunt Skatie Instagram</a>
         </h3>
         {/* https://www.instagram.com/reel/B7Hgl5TlBjO/?hl=en */}
         {/* https://www.instagram.com/auntskatie/?hl=en */}
@@ -43,11 +43,11 @@ function auntSkatie() {
         <h1>Origins</h1>
         <p>
           Aunt Skatie was started in the fall of 2019 by{' '}
-          <a href="https://www.linkedin.com/in/margaret-bowen/">Maggie Bowen</a>, a USC
+          <a href='https://www.linkedin.com/in/margaret-bowen/'>Maggie Bowen</a>, a USC
           undergraduate student. When Maggie started skating, she noticed a severe lack of women at
           the skatepark and the encouraging atmosphere that comes with their presence. Maggie
           realized the importance of female and queer-centric places in male dominated fields during
-          her time as a <a href="https://girlswhocode.com/">Girls Who Code &#40;GWC&#41;</a>{' '}
+          her time as a <a href='https://girlswhocode.com/'>Girls Who Code &#40;GWC&#41;</a>{' '}
           instructor.
         </p>
         <br />

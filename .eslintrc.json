@@ -38,47 +38,46 @@
   ],
   "overrides": [],
   "rules": {
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/require-default-props": "off",
-    "react/jsx-no-bind": "off",
-    "react/no-array-index-key": "warn",
-    "react/no-unstable-nested-components": [
-      "error",
-      {
-        "allowAsProps": true
-      }
-    ],
-    "jsx-a11y/img-redundant-alt": "warn",
-    "jsx-a11y/label-has-associated-control": "off",
-    "jsx-a11y/click-events-have-key-events": "warn",
-    "jsx-a11y/no-noninteractive-element-interactions": "warn",
-    "consistent-return": "off",
-    "import/no-named-default": "off",
-    "import/no-cycle": "warn",
-    "import/prefer-default-export": "warn",
-    "prefer-destructuring": "warn",
-    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-    "@typescript-eslint/sort-type-constituents": "error",
-    "@typescript-eslint/no-shadow": "warn",
-    "@typescript-eslint/no-use-before-define": "warn",
-    "@typescript-eslint/no-unused-expressions": "warn",
-    "default-case": "warn",
-    "no-plusplus": "off",
-    "no-continue": "warn",
-    "no-restricted-syntax": "warn",
-    "no-nested-ternary": "warn",
-    "no-await-in-loop": "warn",
-    "no-param-reassign": "warn",
-    "no-underscore-dangle": [
-      "error",
-      {
-        "allow": ["_path", "_nanoseconds", "_seconds"]
-      }
-    ],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "no-console": "off"
+    "react/self-closing-comp": "off",  // Disable the "Empty components are self-closing" warning
+    "react/prop-types": "off",         // Disable prop-types validation errors (use TypeScript or PropTypes if needed)
+    "react/jsx-filename-extension": "off", // Allow JSX in .js files
+    "jsx-a11y/click-events-have-key-events": "off",  // Disable accessibility warnings for click events
+    "jsx-a11y/no-noninteractive-element-interactions": "off", // Disable warnings for non-interactive elements with event handlers
+    "jsx-a11y/control-has-associated-label": "off",  // Disable the accessibility warning for controls not having a label
+    "@typescript-eslint/no-shadow": "off",  // Disable shadowing variable warnings
+    "react/button-has-type": "off",      // Disable button type missing warnings
+    "react/jsx-props-no-spreading": "off",  // Allow JSX prop spreading
+    "jsx-a11y/label-has-associated-control": "off", // Disable label control warning
+    "react/jsx-uses-react": "off",  // Disable the React import check in JSX (not needed with React 17+)
+    "react/react-in-jsx-scope": "off", // Disable check for React in scope in JSX (not needed with React 17+)
+    "react/require-default-props": "off", // Disable the requirement for default props in React components
+    "react/jsx-no-bind": "off", // Disable warning for bind in JSX
+    "react/no-array-index-key": "warn", // Warn for array index as key
+    "react/no-unstable-nested-components": ["error", {
+      "allowAsProps": true
+    }],
+    "jsx-a11y/img-redundant-alt": "warn", // Warn for redundant alt attributes on img tags
+    "consistent-return": "off", // Disable consistent return enforcement
+    "import/no-named-default": "off", // Allow named defaults
+    "import/no-cycle": "warn", // Warn for circular imports
+    "import/prefer-default-export": "warn", // Warn for default exports
+    "prefer-destructuring": "warn", // Warn for prefer destructuring
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"], // Enforce type aliases over interfaces
+    "@typescript-eslint/sort-type-constituents": "error", // Enforce type constituent sorting
+    "@typescript-eslint/no-use-before-define": "warn", // Warn for use before define in TypeScript
+    "@typescript-eslint/no-unused-expressions": "warn", // Warn for unused expressions
+    "default-case": "warn", // Warn for default-case in switch statements
+    "no-plusplus": "off", // Disable the no-plusplus rule
+    "no-continue": "warn", // Warn for continue statements
+    "no-restricted-syntax": "warn", // Warn for restricted syntax
+    "no-nested-ternary": "warn", // Warn for nested ternaries
+    "no-await-in-loop": "warn", // Warn for await in loops
+    "no-param-reassign": "warn", // Warn for parameter reassignment
+    "no-underscore-dangle": ["error", {
+      "allow": ["_path", "_nanoseconds", "_seconds"]
+    }],
+    "react-hooks/rules-of-hooks": "error", // Enforce React hooks rules
+    "react-hooks/exhaustive-deps": "warn", // Warn for missing exhaustive deps
+    "no-console": "off" // Disable no-console rule
   }
 }

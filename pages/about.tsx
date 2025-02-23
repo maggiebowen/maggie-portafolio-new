@@ -2,20 +2,14 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 
-const bgImg1 = '/pics/maggie-w-monet.jpg';
-
-const abtImgStyle = {
-  borderRadius: '5%',
-  width: '50%',
-  height: '50%',
-};
+const bgImg1 = '/pics/maggie-ordesa-national-park.jpg';
 
 function about() {
   return (
     <div className={styles.secondaryPage}>
       <h1 className={styles.pageTitle}>
         About{' '}
-        <a href="https://www.linkedin.com/in/margaret-bowen/" target="_blank" rel="noreferrer">
+        <a href='https://www.linkedin.com/in/margaret-bowen/' target='_blank' rel='noreferrer'>
           Maggie
         </a>
       </h1>
@@ -25,77 +19,89 @@ function about() {
         <br />
         <div className={styles.aboutImg}>
           <Image
-            alt="photo of Maggie at Joshua Tree National Park"
+            alt='photo of Maggie at Ordesa y Monte Perdido National Park in Spain'
             src={bgImg1}
             quality={100}
-            style={abtImgStyle}
-            width={500}
-            height={500}
+            className={styles.abtImgStyle}
+            layout='responsive'
+            width={2048}
+            height={1536}
           />
         </div>
         <br />
         <div className={styles.center}>
           <a
-            href="https://docs.google.com/document/d/1O0KJ7yNw16_6widqJZn9cHQquLL69HF-BfeX67sXfi0/edit?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
+            href='https://docs.google.com/document/d/1O0KJ7yNw16_6widqJZn9cHQquLL69HF-BfeX67sXfi0/edit?usp=sharing'
+            target='_blank'
+            rel='noreferrer'
           >
             {/* eslint-disable-next-line */}
-            <button className={styles.btnWPadding}>Check out Maggie&apos;s resume</button>
+            <button type='button' className={styles.btnWPadding}>
+              Check out Maggie&apos;s resume
+            </button>
           </a>
         </div>
         <p>
-          Maggie is a computer programmer, visual artist, photographer, and teacher. She currently
-          works as a teacher in a bilingual primary school located in Madrid through the Spanish
-          government program{' '}
-          <a href="https://www.educacionyfp.gob.es/eeuu/convocatorias-programas/convocatorias-eeuu/nalcap.html">
-            NALCAP
-          </a>{' '}
-          (aka auxiliares de conversaciones). Maggie graduated from the University of Southern
-          California, as a{' '}
-          <a href="https://dornsife.usc.edu/engl/narrative-studies-major/">Narrative Studies</a>{' '}
-          major and{' '}
-          <a href="https://itp.usc.edu/academics/computer-programming/">Computer Programming</a>{' '}
-          minor, with honors for maintaining a GPA above 3.5. Additionally, she was the recipient of
-          two awards through the{' '}
-          <a href="https://dornsifeadmission.usc.edu/honors-programs#:~:text=Thematic%20Option&text=Instead%20of%20selecting%20general%20education,the%20idea%20behind%20Thematic%20Option.">
+          Maggie is a computer programmer, visual artist, photographer, filmmaker, and teacher who
+          is passionate about the intersection of psychology, neuroscience, and technology. She is
+          currently pursuing a master’s degree in Human-Computer Interaction at the Università di
+          Trento, where she attends on a full-ride UniTrento Scholarship. Her studies cover a range
+          of emerging technologies, including neurotechnology, multisensory interactive systems, and
+          computational linguistics.
+        </p>
+        <p>
+          Before her master’s, Maggie taught English for two years at a bilingual primary school in
+          Madrid, Spain, through the{' '}
+          <a href='https://www.educacionyfp.gob.es/eeuu/convocatorias-programas/convocatorias-eeuu/nalcap.html'>
+            NALCAP program
+          </a>
+          . Living in Spain helped her gain a mastery of Spanish and later inspired her to learn
+          Italian. Her experience there sparked a curiosity about the inner workings of young minds,
+          particularly in relation to language acquisition. Maggie graduated from the{' '}
+          <a href='https://www.usc.edu/'>University of Southern California</a> with a degree in{' '}
+          <a href='https://dornsife.usc.edu/engl/narrative-studies-major/'>Narrative Studies</a> and
+          a minor in{' '}
+          <a href='https://itp.usc.edu/academics/computer-programming/'>Computer Programming</a>,
+          earning honors for maintaining a GPA above 3.5. She also received distinctions through the{' '}
+          <a href='https://dornsifeadmission.usc.edu/honors-programs#:~:text=Thematic%20Option&text=Instead%20of%20selecting%20general%20education,the%20idea%20behind%20Thematic%20Option.'>
             Thematic Options Honors Program
           </a>{' '}
           and the{' '}
-          <a href="https://ahf.usc.edu/commencement-honors/scholar-distinctions/renaissance/">
+          <a href='https://ahf.usc.edu/commencement-honors/scholar-distinctions/renaissance/'>
             Renaissance Scholar Distinction
           </a>
-          , the latter of which recognizes students with unique major-minor degree combinations.{' '}
+          , the latter recognizing students with unique major-minor combinations.
         </p>
         <p>
-          In her free time Maggie plays the guitar and sings, takes film photos, skateboards, surfs,
-          rock climbs, writes, and illustrates&#92;paints. She speaks fluent Spanish. She has
-          learned Spanish in college courses, through 2.5 years of private tutoring &#40;still
-          on-going&#41;, and most especially through her patient friends. Now she is studying
-          Italian as well! She considers herself a jack-of-all-trades type of artist. She can
-          animate in 2D and 3D &#40;in Procreate/After Effects and Maya respectively&#41;, edit
-          photos and videos in the Adobe suite, design ink and watercolor illustrations, make music,
-          creatively write, and even design and code websites —including this one!
+          Her interdisciplinary background informs her approach to building effective technologies,
+          particularly in the neurotechnology space. She is currently an intern at the{' '}
+          <a href='https://www.cimec.unitn.it/en'>Centro Interdipartimentale Mente/Cervello</a>,
+          analyzing EEG data to study visual perception. Her research focuses on understanding how
+          visual processing is organized around eye movements, the natural rhythm of gaze behavior,
+          and the timing of conscious visual experience, gaining hands-on experience in EEG, MEG,
+          and eye-tracking methodologies.
         </p>
         <p>
-          Maggie&apos;s underlying passion has always been to create inclusive spaces for women and
-          LGBTQ+ folks in actions sports and computer programming. That&apos;s why she has dedicated
-          years to creating and supporting chapters of Girls Who Code in her hometown and even
-          created her own skateboarding community at USC,{' '}
-          <a href="https://www.instagram.com/auntskatie/?hl=en">Aunt Skatie</a>, where she ran
-          clinics for fellow female and LGBTQ+ skateboarders. See this{' '}
-          <a href="https://www.latimes.com/sports/story/2021-12-08/women-lgbtq-community-skateboarding-culture">
+          Maggie’s interdisciplinary approach extends beyond research and technology into the
+          creative arts. She is skilled in 2D and 3D animation (Procreate, After Effects, and Maya),
+          photo and video editing in the Adobe Suite, illustration, painting, songwriting, creative
+          writing, and web design—including this site. In her free time, she plays guitar, shoots
+          film photography, skateboards, surfs, rock climbs, writes, and illustrates.
+        </p>
+        <p>
+          Maggie is committed to fostering inclusivity in action sports and tech. She has dedicated
+          years to creating and supporting chapters of{' '}
+          <a href='https://girlswhocode.com/'>Girls Who Code</a> in her hometown and even founded{' '}
+          <a href='https://www.instagram.com/auntskatie/?hl=en'>Aunt Skatie</a>, a skateboarding
+          community at USC where she ran clinics for female and LGBTQ+ skateboarders. Learn more
+          about Aunt Skatie in this{' '}
+          <a href='https://www.latimes.com/sports/story/2021-12-08/women-lgbtq-community-skateboarding-culture'>
             <i>LA Times</i> article
-          </a>{' '}
-          about the Aunt Skatie community to learn more. In the past, Maggie has also volunteered
-          for other non-profits such as Compton Cowboys, God&apos;s Kitchen, and Exposure Skate.
-        </p>
-        <p>
-          Inspired by her volunteer work and teaching positions, Maggie seeks a career which allows
-          her to develop software that can be utilized by students to learn new languages, including
-          programming languages and make computer programming welcoming to everyone.
-          <br />
-          <br />
+          </a>
+          . In the past, Maggie has also volunteered with organizations such as{' '}
+          <a href='https://www.comptoncowboys.com/'>Compton Cowboys</a>,{' '}
+          <a href='https://www.godskitchen.org/'>God’s Kitchen</a>, and{' '}
+          <a href='https://www.exposureskate.org/'>Exposure Skate</a>.
         </p>
       </div>
     </div>
