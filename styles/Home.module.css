@@ -27,7 +27,7 @@
 }
 
 .homePage {
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 5% 0 0;
   flex: 1;
   display: flex;
@@ -41,6 +41,7 @@
   align-items: center;
   text-align: center;
   text-wrap: balance;
+  font-size: 1.2rem;
 }
 
 .title a {
@@ -187,7 +188,6 @@
     cursor: pointer;
     color: #fff;
     border-radius: 10px;
-    border: none;
     font-size: 1rem;
     padding: 10px;
     margin: 5%;
@@ -213,23 +213,40 @@
   width: 20%;
 }
 
+/* Images container */
 .images {
   list-style: none;
   padding: 0;
   margin-top: 5%;
   display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Default to 1 column per image */
+}
+
+/* Horizontal images will span 2 columns */
+.horizontal {
+  grid-column: span 2;
+}
+
+/* Vertical images stay in one column */
+.vertical {
+  grid-column: span 1;
 }
 
 .individualImage {
   border-radius: 10px;
-  transform: 0.2s;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* .individualImage:hover { 
-  transform: scale(1.25); 
-} */
+/* Hover effect for images */
+.individualImage:hover {
+  transform: scale(1.1); /* Enlarge the image by 10% */
+  filter: brightness(1.1); /* Slightly brighten the image on hover */
+}
+
+.imageImage {
+  overflow: hidden; /* Hide parts of the image that go outside the container when scaled */
+}
 
 .imageTitle {
   font-size: 1.4em;
@@ -239,5 +256,12 @@
 .imageImage {
   & > div {
     display: flex !important;
+  }
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .images {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Stack images vertically on smaller screens */
   }
 }

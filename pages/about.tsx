@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import bgImg1 from 'public/pics/maggie-w-monet.jpg';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
+
+const bgImg1 = '/pics/maggie-w-monet.jpg';
 
 const abtImgStyle = {
   borderRadius: '5%',
@@ -28,12 +29,14 @@ function about() {
             src={bgImg1}
             quality={100}
             style={abtImgStyle}
+            width={500}
+            height={500}
           />
         </div>
         <br />
         <div className={styles.center}>
           <a
-            href="https://docs.google.com/document/d/e/2PACX-1vQDwF62w4W-OdjWYjkDpGt__1oBZEobzoQtSddFpP7wuF9EvOD-GN1dVwmt21ZUURh6VvttzemtUTRy/pub"
+            href="https://docs.google.com/document/d/1O0KJ7yNw16_6widqJZn9cHQquLL69HF-BfeX67sXfi0/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >

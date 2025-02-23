@@ -10,49 +10,28 @@ function codingProjects() {
       <br />
       <h2>Check out my Github accounts:</h2>
       <a href="https://github.com/maggiebowen" target="_blank" rel="noreferrer">
-        {/* eslint-disable-next-line */}
         <button className={styles.btnWPadding}>Personal Github</button>
       </a>
 
-      <a href="https://github.com/maebow" target="_blank" rel="noreferrer">
-        {/* eslint-disable-next-line */}
-        <button className={styles.btnWPadding}>University Github</button>
-      </a>
+      <br />
+      <br />
+      <br />
+      <h2>Human Computer Interaction Projects:</h2>
+      {/* use table component so these are side by side */}
 
-      <br />
-      <br />
-      <br />
-      <h2>Assignments from React Class:</h2>
+      <h3>EquiLuna: </h3>
       <p className={styles.descriptionText}>
-        This project pulls from a Pokemon API to show each Pokemon&apos;s data including moves,
-        height, weight, and image.
+      A multimodal balance board video game exploring the impacts of haptic and auditory feedback on balance.
       </p>
-      <iframe
-        src="https://codesandbox.io/embed/a6-fvb04?fontsize=14&hidenavigation=1&theme=dark"
-        title="A6"
-        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-      />
-      <br />
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/a0VEb8TLl2g?si=xw5TkaKjZ8vznHeh" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      
+      {/* make it open in another tab */}
+      <h3 className={styles.descriptionText}><a href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'>Computational Linguistics:</a></h3>
       <p className={styles.descriptionText}>
-        This project is a bored button! Click it when you want to randomly choose an activity.
+      A zero-shot multi-language hate speech classification system on social media posts. Experiements performed in both English and Italian.
       </p>
-      <iframe
-        src="https://codesandbox.io/embed/fetch-and-render-an-activity-from-the-bored-api-forked-csfdk?fontsize=14&hidenavigation=1&theme=dark"
-        title="fetch and render an activity from the Bored API (forked)"
-        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-      />
-      <br />
-      <p className={styles.descriptionText}>
-        This project allows you to input data to create your very own video game protagonist.
-      </p>
-      <iframe
-        src="https://codesandbox.io/embed/a5-6ygkq?fontsize=14&hidenavigation=1&theme=dark"
-        title="A5"
-        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-      />
+
+
 
       <h2>About this site:</h2>
       <p className={styles.descriptionText}>

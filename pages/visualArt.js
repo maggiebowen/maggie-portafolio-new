@@ -1,6 +1,3 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/prop-types */
 // import Image from 'next/image';
 import { CldImage } from 'next-cloudinary';
 import { useEffect, useState } from 'react';
@@ -14,8 +11,7 @@ export default function VisualArt({ images: defaultImages, folders }) {
 
   function handleOnFolderClick(event) {
     const { folderPath } = event.target.dataset;
-    setActiveFolder(folderPath);
-    setImages([]);
+    setActiveFolder(folderPath); // Change folder
   }
 
   useEffect(() => {
@@ -29,16 +25,13 @@ export default function VisualArt({ images: defaultImages, folders }) {
 
       const { resources } = results;
 
-      const images = mapImageResources(resources);
+      const mappedImages = mapImageResources(resources);
 
-      setImages((prev) => {
-        return [...prev, ...images];
-      });
+      setImages(mappedImages); // Reset images state
     })();
-  }, [activeFolder]);
+  }, [activeFolder]); // Only run the effect when activeFolder changes
 
   return (
-    // eslint-disable-next-line react/jsx-filename-extension
     <div className={styles.secondaryPage}>
       <h1 className={styles.pageTitle}>Visual Art</h1>
       <Navigation />
@@ -61,8 +54,10 @@ export default function VisualArt({ images: defaultImages, folders }) {
 
         <ul className={styles.images}>
           {images.map((image) => {
+            const imageClass = image.width > image.height ? styles.horizontal : styles.vertical;
+
             return (
-              <li key={image.id}>
+              <li key={image.id} className={imageClass}>
                 <a href={image.link} rel="noreferrer">
                   <div className={styles.imageImage}>
                     <CldImage
@@ -74,7 +69,6 @@ export default function VisualArt({ images: defaultImages, folders }) {
                       className={styles.individualImage}
                     />
                   </div>
-                  {/* <h3 className={styles.imageTitle}>{image.title}</h3> */}
                 </a>
               </li>
             );

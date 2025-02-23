@@ -24,6 +24,12 @@ export async function search(options = {}) {
 }
 
 export function mapImageResources(resources) {
+  // Check if resources is an array
+  if (!Array.isArray(resources)) {
+    console.error('Expected resources to be an array, but got:', resources);
+    return [];
+  }
+
   return resources.map((resource) => {
     const { width, height } = resource;
     return {
@@ -48,7 +54,8 @@ export async function getPhotographyFolders() {
     },
   ).then((r) => r.json());
 
-  return response;
+  // Fallback to null or empty array in case response is undefined or unexpected
+  return response || null;
 }
 
 export async function getVisualArtFolders() {
@@ -63,5 +70,6 @@ export async function getVisualArtFolders() {
     },
   ).then((r) => r.json());
 
-  return response;
+  // Fallback to null or empty array in case response is undefined or unexpected
+  return response || null;
 }

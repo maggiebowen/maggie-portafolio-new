@@ -1,6 +1,3 @@
-/* eslint-disable no-restricted-globals */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/prop-types */
 // import Image from 'next/image';
 import { CldImage } from 'next-cloudinary';
 import { useEffect, useState } from 'react';
@@ -61,8 +58,11 @@ export default function Photography({ images: defaultImages, folders }) {
 
         <ul className={styles.images}>
           {images.map((image) => {
+            // Dynamically determine if the image is horizontal or vertical
+            const imageClass = image.width > image.height ? styles.horizontal : styles.vertical;
+
             return (
-              <li key={image.id}>
+              <li key={image.id} className={imageClass}>
                 <a href={image.link} rel="noreferrer">
                   <div className={styles.imageImage}>
                     <CldImage
@@ -74,7 +74,6 @@ export default function Photography({ images: defaultImages, folders }) {
                       className={styles.individualImage}
                     />
                   </div>
-                  {/* <h3 className={styles.imageTitle}>{image.title}</h3> */}
                 </a>
               </li>
             );
