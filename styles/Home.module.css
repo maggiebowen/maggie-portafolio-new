@@ -161,11 +161,6 @@
   margin: 0 auto;
 }
 
-.abtImgStyle:hover {
-  transform: scale(1.1); /* Enlarge the image by 10% */
-  filter: brightness(1.1); /* Slightly brighten the image on hover */
-}
-
 .description {
   margin: 4rem 0;
   line-height: 1.5;
