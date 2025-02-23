@@ -8,17 +8,14 @@ function codingProjects() {
       <Navigation />
 
       <br />
-      <h2>Check out my Github accounts:</h2>
+      <br />
       <a href='https://github.com/maggiebowen' target='_blank' rel='noreferrer'>
         <button type='button' className={styles.btnWPadding}>
-          Personal Github
+          My Github
         </button>
       </a>
-
       <br />
       <br />
-      <br />
-      <h2>Human Computer Interaction Projects:</h2>
       {/* use table component so these are side by side */}
 
       <h3>EquiLuna: </h3>
