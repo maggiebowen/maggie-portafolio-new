@@ -143,11 +143,36 @@
   background-color: #111;
 }
 
+/* filmmaking page */
 .filmmakingContainer {
   align-items: center;
   text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
+  padding: 100px;
+}
+
+.animationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.animationItem {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+  filter: brightness(1);
+  position: relative;
+  overflow: visible;
+}
+
+.animationsGrid:hover .animationItem:not(:hover) {
+  filter: brightness(0.5);
+}
+
+.animationItem:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .aboutImg {
@@ -220,40 +245,45 @@
 }
 
 /* Images container */
+/* for visual art and photography pages */
 .images {
   list-style: none;
   padding: 0;
   margin-top: 5%;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Default to 1 column per image */
-}
 
-/* Horizontal images will span 2 columns */
-.horizontal {
-  grid-column: span 2;
-}
-
-/* Vertical images stay in one column */
-.vertical {
-  grid-column: span 1;
+  /* Masonry-like layout via columns */
+  column-count: 3; /* choose how many columns you want */
+  column-gap: 0.5rem;
 }
 
 .individualImage {
-  border-radius: 10px;
+  border-radius: 15px;
+  padding: 5px;
   transition:
     transform 0.3s ease,
     filter 0.3s ease;
 }
 
-/* Hover effect for images */
+.individualImage {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+  filter: brightness(1);
+}
+
+.images:hover .individualImage:not(:hover) {
+  filter: brightness(0.5);
+}
+
 .individualImage:hover {
-  transform: scale(1.1); /* Enlarge the image by 10% */
-  filter: brightness(1.1); /* Slightly brighten the image on hover */
+  transform: scale(1.1);
+  position: relative;
+  /* brings forward in masonry setup */
+  z-index: 1;
 }
 
 .imageImage {
-  overflow: hidden; /* Hide parts of the image that go outside the container when scaled */
+  overflow: visible;
 }
 
 .imageTitle {
@@ -267,12 +297,15 @@
   }
 }
 
-/* Mobile-friendly adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .images {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(100%, 1fr)
-    ); /* Stack images vertically on smaller screens */
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .images {
+    column-count: 1;
+    column-gap: 0;
   }
 }

@@ -56,10 +56,11 @@ export default function VisualArt({ images: defaultImages, folders }) {
 
         <ul className={styles.images}>
           {images.map((image) => {
-            const imageClass = image.width > image.height ? styles.horizontal : styles.vertical;
+            // const imageClass = image.width > image.height ? styles.horizontal : styles.vertical;
 
             return (
-              <li key={image.id} className={imageClass}>
+              // className={imageClass}
+              <li key={image.id}>
                 <a href={image.link} rel='noreferrer'>
                   <div className={styles.imageImage}>
                     <CldImage
