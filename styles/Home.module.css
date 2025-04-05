@@ -145,9 +145,10 @@
 
 /* filmmaking page */
 .filmmakingContainer {
-  align-items: center;
   text-align: center;
-  padding: 100px;
+  padding: 2rem;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .animationsGrid {
@@ -301,11 +302,33 @@
   .images {
     column-count: 2;
   }
+
+  .animationItem {
+    transform: scale(0.9);
+    /* or 0.8, etc. */
+  }
+}
+
+@media (max-width: 900px) {
+  .animationsGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
   .images {
     column-count: 1;
     column-gap: 0;
+  }
+
+  .animationsGrid {
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .animationItem {
+    transform: scale(0.9);
+    /* or 0.8, etc. */
   }
 }
