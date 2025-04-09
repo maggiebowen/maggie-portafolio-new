@@ -1,7 +1,17 @@
+import { useState } from 'react';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 
+const csefImg = '/pics/Hand-Model-CSEF.jpg';
+const pamaImg = '/pics/PAMA.png';
+const equilunaImg = '/pics/equiluna.png';
+const hatespeechImg = '/pics/hate-speech-twitter.png';
+
 function codingProjects() {
+  const [showVideo, setShowVideo] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
+
   return (
     <div className={styles.projectsContainer}>
       <h1 className={styles.pageTitle}>Coding Projects</h1>
@@ -18,32 +28,102 @@ function codingProjects() {
       <br />
       {/* use table component so these are side by side */}
 
-      <h3>EquiLuna: </h3>
-      <p className={styles.descriptionText}>
-        A multimodal balance board video game exploring the impacts of haptic and auditory feedback
-        on balance.
-      </p>
-      <iframe
-        width='560'
-        height='315'
-        src='https://www.youtube.com/embed/a0VEb8TLl2g?si=xw5TkaKjZ8vznHeh'
-        title='YouTube video player'
-        frameBorder='0'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-        referrerPolicy='strict-origin-when-cross-origin'
-        allowFullScreen
-      ></iframe>
+      <div className={styles.codingProjectsGrid}>
+        <div className={styles.codingProjectsItem}> 
+          <h3>CSEF REDESIGN</h3>
+          <a href='https://www.collegeskateboarding.com/' target='_blank' rel='noreferrer'>
+          <Image
+              alt='photo provided by CSEF'
+              src={csefImg}
+              quality={100}
+              className={styles.codingProjectsImg}
+              width={2500}
+              height={1667}
+            />
+            </a>
+        </div>
+        
+        <div className={styles.codingProjectsItem}> 
+          <h3>PAMA UX DESIGN</h3>
 
-      {/* make it open in another tab */}
-      <h3 className={styles.descriptionText}>
-        <a href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'>
-          Computational Linguistics:
-        </a>
-      </h3>
-      <p className={styles.descriptionText}>
-        A zero-shot multi-language hate speech classification system on social media posts.
-        Experiements performed in both English and Italian.
-      </p>
+          <a href='https://www.figma.com/proto/W4sIe1YWKUz1pFgZnoPpor/PAMA?node-id=179558-13173&t=nCfIUquirVGPA9ai-1' target='_blank' rel='noreferrer'>
+          <Image
+              alt='photo from UX Challenge presentation'
+              src={pamaImg}
+              quality={100}
+              className={styles.codingProjectsImg}
+              width={1548}
+              height={1028}
+            />
+          </a>
+        </div>
+
+        <div className={styles.codingProjectsItem}>
+          <h3>EQUILUNA</h3>
+          {showVideo ? (
+            <>
+              <iframe
+                width='560'
+                height='315'
+                src='https://www.youtube.com/embed/a0VEb8TLl2g?si=xw5TkaKjZ8vznHeh&autoplay=1'
+                title='YouTube video player'
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                referrerPolicy='strict-origin-when-cross-origin'
+                allowFullScreen
+              ></iframe>
+              <p className={styles.descriptionText}>
+                A multimodal balance board video game exploring the impacts of haptic and auditory feedback
+                on balance.
+              </p>
+            </>
+          ) : (
+            <Image
+              alt='photo of Equiluna start screen'
+              src={equilunaImg}
+              quality={100}
+              className={styles.codingProjectsImg}
+              width={1548}
+              height={1028}
+              onClick={() => setShowVideo(true)}
+              style={{ cursor: 'pointer' }}
+            />
+          )}
+        </div>
+
+        <div className={styles.codingProjectsItem}>
+          <h3>COMPUTATIONAL LINGUISTICS</h3>
+          <div onClick={() => setShowDescription(!showDescription)} style={{ cursor: 'pointer' }}>
+            <Image
+              alt='photo of blocked hate speech'
+              src={hatespeechImg}
+              quality={100}
+              className={styles.codingProjectsImg}
+              width={1548}
+              height={1028}
+            />
+          </div>
+          <a
+            href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'
+            target='_blank'
+            rel='noreferrer'
+            className={styles.link}
+            >
+            View Code
+          </a>
+
+          {showDescription && (
+            <>
+              <p className={styles.descriptionText}>
+                A zero-shot multi-language hate speech classification system on social media posts.
+                Experiements performed in both English and Italian.
+              </p>
+              
+            </>
+          )}
+        </div>
+      </div>
+      
 
       <h2>About this site:</h2>
       <p className={styles.descriptionText}>

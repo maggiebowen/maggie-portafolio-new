@@ -91,6 +91,11 @@
   color: #ff0088;
 }
 
+.link {
+  text-decoration: underline;
+  color: #ff0088;
+}
+
 .doblar {
   width: 40%;
   align-items: center;
@@ -136,11 +141,34 @@
   text-align: left;
 }
 
+/* coding projects page */
 .projectsContainer {
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   color: #fff;
   background-color: #111;
+}
+
+.codingProjectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.5rem;
+}
+
+.codingProjectsImg {
+  border-radius: 3vw;
+  width: 80%;
+  height: auto;
+  margin: 1.5rem auto;
+}
+
+.codingProjectItem {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+  filter: brightness(1);
+  position: relative;
+  overflow: visible;
 }
 
 /* filmmaking page */
@@ -181,7 +209,7 @@
 }
 
 .abtImgStyle {
-  border-radius: 5%;
+  border-radius: 3vw;
   max-width: 60%;
   height: auto;
   margin: 0 auto;
@@ -313,12 +341,21 @@
   .animationsGrid {
     grid-template-columns: 1fr;
   }
+
+  .codingProjectsGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
   .images {
     column-count: 1;
     column-gap: 0;
+  }
+
+  .descriptionText {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .animationsGrid {
@@ -329,6 +366,13 @@
 
   .animationItem {
     transform: scale(0.9);
-    /* or 0.8, etc. */
+  }
+
+  .codingProjectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .codingProjectItem {
+    transform: scale(0.9);
   }
 }
