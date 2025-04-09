@@ -118,17 +118,20 @@ function CodingProjects() {
           </div>
 
           {showDescription && (
-            <><p className={styles.descriptionText}>
-              A zero-shot multi-language hate speech classification system on social media posts.
-              Experiements performed in both English and Italian.
-            </p><a
-              href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'
-              target='_blank'
-              rel='noreferrer'
-              className={styles.link}
-            >
+            <>
+              <p className={styles.descriptionText}>
+                A zero-shot multi-language hate speech classification system on social media posts.
+                Experiements performed in both English and Italian.
+              </p>
+              <a
+                href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'
+                target='_blank'
+                rel='noreferrer'
+                className={styles.link}
+              >
                 View Code
-              </a></>
+              </a>
+            </>
           )}
         </div>
       </div>
