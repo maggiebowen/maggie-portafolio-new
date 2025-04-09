@@ -82,8 +82,8 @@
 }
 
 .descriptionText {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .descriptionText a {
@@ -359,7 +359,7 @@
   }
 
   .animationsGrid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-top: 2rem;
   }

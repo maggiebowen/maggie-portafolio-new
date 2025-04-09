@@ -8,7 +8,7 @@ const pamaImg = '/pics/PAMA.png';
 const equilunaImg = '/pics/equiluna.png';
 const hatespeechImg = '/pics/hate-speech-twitter.png';
 
-function codingProjects() {
+function CodingProjects() {
   const [showVideo, setShowVideo] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
 
@@ -26,13 +26,12 @@ function codingProjects() {
       </a>
       <br />
       <br />
-      {/* use table component so these are side by side */}
 
       <div className={styles.codingProjectsGrid}>
-        <div className={styles.codingProjectsItem}> 
+        <div className={styles.codingProjectsItem}>
           <h3>CSEF REDESIGN</h3>
           <a href='https://www.collegeskateboarding.com/' target='_blank' rel='noreferrer'>
-          <Image
+            <Image
               alt='photo provided by CSEF'
               src={csefImg}
               quality={100}
@@ -40,14 +39,18 @@ function codingProjects() {
               width={2500}
               height={1667}
             />
-            </a>
+          </a>
         </div>
-        
-        <div className={styles.codingProjectsItem}> 
+
+        <div className={styles.codingProjectsItem}>
           <h3>PAMA UX DESIGN</h3>
 
-          <a href='https://www.figma.com/proto/W4sIe1YWKUz1pFgZnoPpor/PAMA?node-id=179558-13173&t=nCfIUquirVGPA9ai-1' target='_blank' rel='noreferrer'>
-          <Image
+          <a
+            href='https://www.figma.com/proto/W4sIe1YWKUz1pFgZnoPpor/PAMA?node-id=179558-13173&t=nCfIUquirVGPA9ai-1'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <Image
               alt='photo from UX Challenge presentation'
               src={pamaImg}
               quality={100}
@@ -73,8 +76,8 @@ function codingProjects() {
                 allowFullScreen
               ></iframe>
               <p className={styles.descriptionText}>
-                A multimodal balance board video game exploring the impacts of haptic and auditory feedback
-                on balance.
+                A multimodal balance board video game exploring the impacts of haptic and auditory
+                feedback on balance.
               </p>
             </>
           ) : (
@@ -93,7 +96,17 @@ function codingProjects() {
 
         <div className={styles.codingProjectsItem}>
           <h3>COMPUTATIONAL LINGUISTICS</h3>
-          <div onClick={() => setShowDescription(!showDescription)} style={{ cursor: 'pointer' }}>
+          <div
+            onClick={() => setShowDescription(!showDescription)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                setShowDescription(!showDescription);
+              }
+            }}
+            role='button'
+            tabIndex={0}
+            style={{ cursor: 'pointer' }}
+          >
             <Image
               alt='photo of blocked hate speech'
               src={hatespeechImg}
@@ -103,27 +116,22 @@ function codingProjects() {
               height={1028}
             />
           </div>
-          <a
-            href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'
-            target='_blank'
-            rel='noreferrer'
-            className={styles.link}
-            >
-            View Code
-          </a>
 
           {showDescription && (
-            <>
-              <p className={styles.descriptionText}>
-                A zero-shot multi-language hate speech classification system on social media posts.
-                Experiements performed in both English and Italian.
-              </p>
-              
-            </>
+            <><p className={styles.descriptionText}>
+              A zero-shot multi-language hate speech classification system on social media posts.
+              Experiements performed in both English and Italian.
+            </p><a
+              href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'
+              target='_blank'
+              rel='noreferrer'
+              className={styles.link}
+            >
+                View Code
+              </a></>
           )}
         </div>
       </div>
-      
 
       <h2>About this site:</h2>
       <p className={styles.descriptionText}>
@@ -143,4 +151,4 @@ function codingProjects() {
   );
 }
 
-export default codingProjects;
+export default CodingProjects;

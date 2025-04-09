@@ -8,7 +8,7 @@ function Navigation() {
       <span> / </span>
       <Link href='/about'>About</Link>
       <span> / </span>
-      <Link href='/codingProjects'>Coding Projects</Link>
+      <Link href='/CodingProjects'>Coding Projects</Link>
       <span> / </span>
       <Link href='/photography'>Photography</Link>
       <span> / </span>
