@@ -124,7 +124,7 @@ function CodingProjects() {
                 Experiements performed in both English and Italian.
               </p>
               <a
-                href='https://colab.research.google.com/drive/1OSaTAvAiFLA2lByXbD-uStAT9CymVERM?usp=sharing'
+                href='https://github.com/maggiebowen/computational-linguistics/'
                 target='_blank'
                 rel='noreferrer'
                 className={styles.link}
