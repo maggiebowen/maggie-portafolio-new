@@ -1,0 +1,67 @@
+.carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.carouselContainer::before,
+.carouselContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.carouselContainer::before {
+    left: 0;
+    background: linear-gradient(to right, #000 0%, transparent 100%);
+}
+
+.carouselContainer::after {
+    right: 0;
+    background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+
+.carouselTrack {
+    display: flex;
+    gap: 1.5rem;
+    animation: scroll 40s linear infinite;
+    width: fit-content;
+}
+
+.carouselTrack:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.skillBadge {
+    background-color: none;
+    border: 2px solid #ff0088;
+    color: #ff0088;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skillBadge:hover {
+    transform: scale(1.1);
+    background-color: #cc006d;
+}

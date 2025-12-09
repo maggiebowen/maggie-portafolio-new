@@ -23,7 +23,6 @@ function Navigation() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/codingProjects', label: 'Coding Projects' },
     { href: '/photography', label: 'Photography' },
     { href: '/visualArt', label: 'Visual Art' },
     { href: '/filmmaking', label: 'Filmmaking' },

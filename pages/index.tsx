@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.css';
 import Navigation from './components/Navigation';
 import ProjectGrid from './components/ProjectGrid';
 import ResumeSection from './components/ResumeSection';
+import SkillsCarousel from './components/SkillsCarousel';
 
 const bgImg = '/pics/surf-background-cover-page.jpg';
 
@@ -63,6 +64,7 @@ function Home() {
         <div ref={projectSectionRef} className={styles.projectSection}>
           <h2 className={styles.pageTitle} style={{ marginTop: 0 }}>Recent Projects</h2>
           <ProjectGrid />
+          <SkillsCarousel />
           <br />
           <ResumeSection />
           {/* <div className={styles.center}>
