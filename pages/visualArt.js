@@ -68,7 +68,8 @@ export default function VisualArt({ images: defaultImages, folders }) {
                       height={image.height}
                       src={image.image}
                       alt=''
-                      layout='responsive'
+                      sizes='100vw'
+                      style={{ width: '100%', height: 'auto' }}
                       className={styles.individualImage}
                     />
                   </div>
