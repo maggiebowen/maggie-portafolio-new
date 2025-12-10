@@ -67,13 +67,6 @@ function Home() {
           <SkillsCarousel />
           <br />
           <ResumeSection />
-          {/* <div className={styles.center}>
-            <Link href='/codingProjects'>
-              <button type='button' className={styles.btnWPadding}>
-                See More & View Code
-              </button>
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>
