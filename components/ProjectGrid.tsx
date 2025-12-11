@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import styles from '../../styles/Home.module.css';
-import { PROJECTS, CATEGORIES } from '../../data/projects';
+import styles from '../styles/Home.module.css';
+import { PROJECTS, CATEGORIES } from '../data/projects';
 
 export default function ProjectGrid() {
     const [activeFilter, setActiveFilter] = useState(CATEGORIES.ALL);

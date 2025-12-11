@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Navigation from './components/Navigation';
-import ProjectGrid from './components/ProjectGrid';
+import Navigation from '../components/Navigation';
+import ProjectGrid from '../components/ProjectGrid';
 
 function CodingProjects() {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Navigation from './components/Navigation';
+import Navigation from '../components/Navigation';
 
 const bgImg1 = '/pics/maggie-with-camera.JPG';
 

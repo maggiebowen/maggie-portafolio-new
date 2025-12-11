@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../../styles/ProjectDetail.module.css';
+import styles from '../styles/ProjectDetail.module.css';
 import Navigation from './Navigation';
 
 interface ProjectDetailProps {

@@ -1,6 +1,6 @@
 /* eslint-disable react/style-prop-object */
 import styles from '../styles/Home.module.css';
-import Navigation from './components/Navigation';
+import Navigation from '../components/Navigation';
 
 function auntSkatie() {
   return (

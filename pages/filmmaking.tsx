@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-import Navigation from './components/Navigation';
-import YoutubeEmbed from './components/YoutubeEmbed';
+import Navigation from '../components/Navigation';
+import YoutubeEmbed from '../components/YoutubeEmbed';
 
 function filmmaking() {
   return (

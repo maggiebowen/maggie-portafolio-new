@@ -2,7 +2,7 @@ import { CldImage } from 'next-cloudinary';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import { getPhotographyFolders, mapImageResources, search } from './api/cloudinary';
-import Navigation from './components/Navigation';
+import Navigation from '../components/Navigation';
 
 export default function Photography({ images: defaultImages, folders }) {
   const [images, setImages] = useState(defaultImages);

@@ -5,10 +5,10 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDownLong, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import styles from '../styles/Home.module.css';
-import Navigation from './components/Navigation';
-import ProjectGrid from './components/ProjectGrid';
-import ResumeSection from './components/ResumeSection';
-import SkillsCarousel from './components/SkillsCarousel';
+import Navigation from '../components/Navigation';
+import ProjectGrid from '../components/ProjectGrid';
+import ResumeSection from '../components/ResumeSection';
+import SkillsCarousel from '../components/SkillsCarousel';
 import resumeStyles from '../styles/ResumeSection.module.css';
 
 const bgImg = '/pics/surf-background-cover-page.jpg';

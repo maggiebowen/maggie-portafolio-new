@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import ProjectDetail from '../../pages/components/ProjectDetail';
+import ProjectDetail from '../../components/ProjectDetail';
 import { PROJECTS } from '../../data/projects';
 
 export default function ProjectPage() {

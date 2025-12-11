@@ -1,4 +1,4 @@
-import styles from '../../styles/SkillsCarousel.module.css';
+import styles from '../styles/SkillsCarousel.module.css';
 
 export default function SkillsCarousel() {
     const skills = [

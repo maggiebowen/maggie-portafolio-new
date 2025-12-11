@@ -1,4 +1,4 @@
-import styles from '../../styles/ResumeSection.module.css';
+import styles from '../styles/ResumeSection.module.css';
 
 export default function ResumeSection() {
     return (
