@@ -3,10 +3,12 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 import { PROJECTS, CATEGORIES } from '../data/projects';
+import ProjectModal from './ProjectModal';
 
 export default function ProjectGrid() {
     const [activeFilter, setActiveFilter] = useState(CATEGORIES.ALL);
-    const router = useRouter();
+    // const router = useRouter(); // Routing no longer needed for project details
+    const [selectedProject, setSelectedProject] = useState<typeof PROJECTS[0] | null>(null);
 
     // Group categories for rendering buttons
     const filterList = Object.values(CATEGORIES);
@@ -18,13 +20,13 @@ export default function ProjectGrid() {
 
     const handleProjectClick = (projectId: string) => {
         const project = PROJECTS.find(p => p.id === projectId);
-
-        // If project has an internal link (starts with /), use that instead of detail page
-        if (project?.link && !project.isExternal) {
-            router.push(project.link);
-        } else {
-            router.push(`/projects/${projectId}`);
+        if (project) {
+            setSelectedProject(project);
         }
+    };
+
+    const handleCloseModal = () => {
+        setSelectedProject(null);
     };
 
     return (
@@ -74,6 +76,13 @@ export default function ProjectGrid() {
                     );
                 })}
             </div>
+
+            {selectedProject && (
+                <ProjectModal
+                    project={selectedProject}
+                    onClose={handleCloseModal}
+                />
+            )}
         </>
     );
 }

@@ -1,0 +1,223 @@
+/* Overlay covers the entire screen */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    /* Semi-transparent dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    /* Ensure it's above everything else */
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Container */
+.modal {
+    background-color: #111;
+    /* Dark background as requested/consistent with site */
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 20px;
+    border: 2px solid #ff0088;
+    /* 2px stroke in specific pink color */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* Scrollable content if it exceeds height */
+    box-shadow: 0 0 20px rgba(255, 0, 136, 0.2);
+    transform: scale(0.9);
+    animation: scaleUp 0.3s forwards;
+}
+
+@keyframes scaleUp {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Close Button */
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    /* Internal padding */
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff0088;
+}
+
+/* Content Layout */
+.content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Media Section (Top) */
+.mediaContainer {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    overflow: hidden;
+    border-radius: 18px 18px 0 0;
+    /* Match modal radius at top */
+    min-height: 300px;
+    /* Ensure space for media */
+    position: relative;
+    padding-top: 2rem;
+}
+
+.imageMedia {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.videoFrame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+/* Text Section (Details) */
+.details {
+    padding: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 0;
+    color: #ff0088;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    white-space: pre-wrap;
+    /* Preserve newlines */
+}
+
+.description a {
+    color: #ff0088;
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skillsContainer {
+    margin-top: 1rem;
+}
+
+.skillsHeading {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skillBadge {
+    background-color: rgba(255, 0, 136, 0.15);
+    border: 1px solid #ff0088;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* External Links */
+.linkContainer {
+    margin-top: 1rem;
+}
+
+.externalLink {
+    display: inline-block;
+    color: #ff0088;
+    text-decoration: none;
+    border: 1px solid #ff0088;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.externalLink:hover {
+    background-color: #ff0088;
+    color: #fff;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .modal {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+        border-radius: 0;
+        border: none;
+        /* Full screen usually doesn't need border */
+    }
+
+    .mediaContainer {
+        border-radius: 0;
+    }
+
+    .closeBtn {
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Background for visibility on media */
+    }
+
+    .details {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}

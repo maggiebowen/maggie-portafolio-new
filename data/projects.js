@@ -17,6 +17,9 @@ export const PROJECTS = [
         height: 1667,
         alt: 'photo provided by CSEF',
         description: 'A complete redesign of the College Skateboarding Educational Foundation website. The goal was to modernize the look, improve user experience for scholarship applicants, and highlight the vibrant community of college skateboarders.',
+        modalDescription: 'This redesign was done just in time for the release of CSEF’s limited edition Nike SB Dunks. The team requested I overhaul the old website structure in order to make a more modern look which fit the new shoe’s and merch’s aesthetic. Check out my redesign here: https://www.collegeskateboarding.com/. \n\nPS: You might even notice me in the homepage image, check out the girl with the pink board!',
+        mediaType: 'image',
+        mediaSrc: '/pics/Hand-Model-CSEF.jpg',
         skills: ['HTML', 'CSS', 'JavaScript', 'squarespace', 'UI/UX Design'],
     },
     {
@@ -30,6 +33,10 @@ export const PROJECTS = [
         height: 1028,
         alt: 'photo from UX Challenge presentation',
         description: 'Winner for the 2025 UX Challenge hosted by Hub Innovazione Trentino. I presented on behalf of my team in my third language, Italian. We designed an app to help tourists discover local hidden gems.',
+        modalDescription: 'Check out the winning design for the Hub Innovazione Trentino UX Challenge of 2025! We designed a high fidelity prototype for a major international manufacturing company, a member of the NIDEC corporation, which streamlined factory-floor workflow and replaced an outdated pen-and-paper maintenance reporting system which caused major production delays and financial loss. I presented our prototype for a regional UX/UI challenge in my third language, Italian, ultimately winning the competition and delivering a solution beyond what was originally proposed. This resulted in a full integration of our prototype into the company’s internal software. They projected our solution saved thousands through reduced labor inefficiency, machine-downtime repair costs, and delivery delays.',
+        mediaType: 'image',
+        mediaSrc: '/pics/PAMA.png',
+        linkText: 'See full prototype',
         skills: ['Figma', 'Prototyping', 'User Research', 'Italian', 'Public Speaking'],
     },
     {
@@ -42,6 +49,10 @@ export const PROJECTS = [
         height: 1028,
         alt: 'photo of Equiluna start screen',
         description: 'A multimodal balance board video game exploring the impacts of haptic and auditory feedback on balance. Players control a lunar lander using their body weight on a custom balance board.',
+        modalDescription: 'This project was for my multisensory interactive systems course. I combined my passion for skateboarding and multisensory technology to make this balance board video game. I took inspiration from my physical therapy routine after an ankle injury and used it to fuel the creation of this project. I was responsible for all the visual design and front end of the game, the physical construction of the laser cut balance board, the set up of the arduino and compatible sensors, and the shooting and editing of the demo video above.\n\nLater I presented this project at CHItaly 2025 in Salerno and at San Diego State University’s stoke sessions conference.',
+        mediaType: 'youtube',
+        mediaSrc: 'https://www.youtube.com/embed/a0VEb8TLl2g?si=xw5TkaKjZ8vznHeh&autoplay=1',
+        paperLink: 'https://dl.acm.org/doi/10.1145/3750069.3750301',
         skills: ['Unity', 'C#', 'Arduino', 'Game Design', 'Haptics'],
     },
     {
@@ -56,6 +67,9 @@ export const PROJECTS = [
         alt: 'photo of blocked hate speech',
         description: 'A zero-shot multi-language hate speech classification system on social media posts. Experiments performed in both English and Italian using Transformer models.',
         linkText: 'View Code',
+        modalDescription: 'Here’s my hate speech classifier in English and Italian. I made use of <a href="https://huggingface.co/google-bert/bert-base-multilingual-cased" target="_blank" rel="noreferrer">Hugging Face’s BERT multilingual base model</a>.',
+        mediaType: 'image',
+        mediaSrc: '/pics/hate-speech-twitter.png',
         skills: ['Python', 'NLP', 'Machine Learning', 'PyTorch', 'Hugging Face'],
     },
     {
@@ -67,6 +81,10 @@ export const PROJECTS = [
         height: 614,
         alt: 'FocusFarm game screenshot',
         description: 'A neurofeedback interface utilizing an EEG device called NeuroPawn to help students focus. Watch as your farm grows while your brainwaves remain at the alpha band frequency.',
+        modalDescription: 'FocusFarm transforms brain activity monitoring into an engaging experience. As users maintain focus, they grow virtual plants on their farm. The application uses real-time alpha wave analysis (8-12 Hz) to calculate focus scores and provide immediate neurofeedback. This project was developed during the BrainHack Lucca 2025 hackathon, exploring the intersection of neurotechnology and user experience design. I designed the frontend interface, assisted in the backend logic utilizing the brainflow API, set up all the EEG hardware, shot and edited the demo video, and presented the final project at the end of the BrainHack.',
+        mediaType: 'youtube',
+        mediaSrc: 'https://www.youtube.com/embed/foF9tnx_bp4?si=1C87YZQ-5JS_lf99',
+        projectLink: 'https://github.com/maggiebowen/EEG-focus-interface',
         skills: ['Python', 'EEG', 'Neurotechnology', 'Game Development', 'Data Visualization'],
     },
 ];
