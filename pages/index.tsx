@@ -9,6 +9,7 @@ import Navigation from './components/Navigation';
 import ProjectGrid from './components/ProjectGrid';
 import ResumeSection from './components/ResumeSection';
 import SkillsCarousel from './components/SkillsCarousel';
+import resumeStyles from '../styles/ResumeSection.module.css';
 
 const bgImg = '/pics/surf-background-cover-page.jpg';
 
@@ -64,8 +65,13 @@ function Home() {
         <div ref={projectSectionRef} className={styles.projectSection}>
           <h2 className={styles.pageTitle} style={{ marginTop: 0 }}>Recent Projects</h2>
           <ProjectGrid />
-          <SkillsCarousel />
           <br />
+          <div className={resumeStyles.section} style={{ paddingBottom: 0, paddingTop: '2rem' }}>
+            <div className={resumeStyles.container}>
+              <h2 className={resumeStyles.header} style={{ marginBottom: '1rem' }}>Skills</h2>
+            </div>
+          </div>
+          <SkillsCarousel />
           <ResumeSection />
         </div>
       </div>

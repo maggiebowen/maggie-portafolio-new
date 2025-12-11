@@ -1,4 +1,6 @@
 .carouselContainer {
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
     overflow: hidden;
     background-color: #000;

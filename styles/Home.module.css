@@ -38,7 +38,7 @@
 }
 
 .homePage {
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 5% 0 0;
   flex: 1;
   display: flex;
@@ -235,6 +235,7 @@
 }
 
 .secondaryPage {
+  min-height: 100vh;
   color: #fff;
   background-color: #111;
 }
@@ -432,9 +433,24 @@
   text-align: center;
 }
 
+.aboutContentWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.aboutImgColumn {
+  flex: 0 0 30%;
+}
+
+.aboutTextColumn {
+  flex: 1;
+}
+
 .abtImgStyle {
   border-radius: 3vw;
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -569,6 +585,20 @@
 
   .codingProjectsGrid {
     grid-template-columns: 1fr;
+  }
+
+  .aboutContentWrapper {
+    flex-direction: column;
+  }
+
+  .aboutImgColumn {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .abtImgStyle {
+    max-width: 60%;
   }
 }
 
