@@ -7,6 +7,21 @@ export const CATEGORIES = {
 
 export const PROJECTS = [
     {
+        id: 'focusfarm',
+        title: 'FOCUSFARM',
+        image: '/pics/focus-farm-portfolio.png',
+        categories: [CATEGORIES.CODING, CATEGORIES.NEURO],
+        width: 1024,
+        height: 614,
+        alt: 'FocusFarm game screenshot',
+        description: 'A neurofeedback interface utilizing an EEG device called NeuroPawn to help students focus. Watch as your farm grows while your brainwaves remain at the alpha band frequency.',
+        modalDescription: 'FocusFarm transforms brain activity monitoring into an engaging experience. As users maintain focus, they grow virtual plants on their farm. The application uses real-time alpha wave analysis (8-12 Hz) to calculate focus scores and provide immediate neurofeedback. This project was developed during the BrainHack Lucca 2025 hackathon, exploring the intersection of neurotechnology and user experience design. I designed the frontend interface, assisted in the backend logic utilizing the brainflow API, set up all the EEG hardware, shot and edited the demo video, and presented the final project at the end of the BrainHack.',
+        mediaType: 'youtube',
+        mediaSrc: 'https://www.youtube.com/embed/foF9tnx_bp4?si=1C87YZQ-5JS_lf99',
+        projectLink: 'https://github.com/maggiebowen/EEG-focus-interface',
+        skills: ['Python', 'EEG', 'Neurotechnology', 'Game Development', 'Data Visualization'],
+    },
+    {
         id: 'csef',
         title: 'CSEF REDESIGN',
         image: '/pics/Hand-Model-CSEF.jpg',
@@ -71,20 +86,5 @@ export const PROJECTS = [
         mediaType: 'image',
         mediaSrc: '/pics/hate-speech-twitter.png',
         skills: ['Python', 'NLP', 'Machine Learning', 'PyTorch', 'Hugging Face'],
-    },
-    {
-        id: 'focusfarm',
-        title: 'FOCUSFARM',
-        image: '/pics/focus-farm-portfolio.png',
-        categories: [CATEGORIES.CODING, CATEGORIES.NEURO],
-        width: 1024,
-        height: 614,
-        alt: 'FocusFarm game screenshot',
-        description: 'A neurofeedback interface utilizing an EEG device called NeuroPawn to help students focus. Watch as your farm grows while your brainwaves remain at the alpha band frequency.',
-        modalDescription: 'FocusFarm transforms brain activity monitoring into an engaging experience. As users maintain focus, they grow virtual plants on their farm. The application uses real-time alpha wave analysis (8-12 Hz) to calculate focus scores and provide immediate neurofeedback. This project was developed during the BrainHack Lucca 2025 hackathon, exploring the intersection of neurotechnology and user experience design. I designed the frontend interface, assisted in the backend logic utilizing the brainflow API, set up all the EEG hardware, shot and edited the demo video, and presented the final project at the end of the BrainHack.',
-        mediaType: 'youtube',
-        mediaSrc: 'https://www.youtube.com/embed/foF9tnx_bp4?si=1C87YZQ-5JS_lf99',
-        projectLink: 'https://github.com/maggiebowen/EEG-focus-interface',
-        skills: ['Python', 'EEG', 'Neurotechnology', 'Game Development', 'Data Visualization'],
     },
 ];
