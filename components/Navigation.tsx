@@ -26,7 +26,6 @@ function Navigation() {
     { href: '/photography', label: 'Photography' },
     { href: '/visualArt', label: 'Visual Art' },
     { href: '/filmmaking', label: 'Filmmaking' },
-    { href: '/auntSkatie', label: 'Aunt Skatie' },
   ];
 
   return (

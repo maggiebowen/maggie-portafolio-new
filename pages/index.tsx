@@ -10,6 +10,7 @@ import ProjectGrid from '../components/ProjectGrid';
 import ResumeSection from '../components/ResumeSection';
 import SkillsCarousel from '../components/SkillsCarousel';
 import resumeStyles from '../styles/ResumeSection.module.css';
+import BraggingRights from '../components/Publications';
 
 const bgImg = '/pics/surf-background-cover-page.jpg';
 
@@ -72,6 +73,7 @@ function Home() {
             </div>
           </div>
           <SkillsCarousel />
+          <BraggingRights />
           <ResumeSection />
         </div>
       </div>

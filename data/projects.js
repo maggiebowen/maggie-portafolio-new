@@ -9,7 +9,7 @@ export const PROJECTS = [
     {
         id: 'focusfarm',
         title: 'FOCUSFARM',
-        image: '/pics/focus-farm-portfolio.png',
+        image: '/pics/focus-farm.png',
         categories: [CATEGORIES.CODING, CATEGORIES.NEURO],
         width: 1024,
         height: 614,
@@ -47,7 +47,7 @@ export const PROJECTS = [
         width: 1548,
         height: 1028,
         alt: 'photo from UX Challenge presentation',
-        description: 'Winner for the 2025 UX Challenge hosted by Hub Innovazione Trentino. I presented on behalf of my team in my third language, Italian. We designed an app to help tourists discover local hidden gems.',
+        description: 'Winner for the 2025 UX Challenge hosted by Hub Innovazione Trentino. I presented on behalf of my team in my third language, Italian.',
         modalDescription: 'Check out the winning design for the Hub Innovazione Trentino UX Challenge of 2025! We designed a high fidelity prototype for a major international manufacturing company, a member of the NIDEC corporation, which streamlined factory-floor workflow and replaced an outdated pen-and-paper maintenance reporting system which caused major production delays and financial loss. I presented our prototype for a regional UX/UI challenge in my third language, Italian, ultimately winning the competition and delivering a solution beyond what was originally proposed. This resulted in a full integration of our prototype into the company’s internal software. They projected our solution saved thousands through reduced labor inefficiency, machine-downtime repair costs, and delivery delays.',
         mediaType: 'image',
         mediaSrc: '/pics/PAMA.png',
