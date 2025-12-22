@@ -2,7 +2,7 @@ export const CATEGORIES = {
     ALL: 'Show All',
     CODING: 'Coding',
     NEURO: 'Neurotechnology',
-    DESGIN: 'Design'
+    DESIGN: 'Design'
 };
 
 export const PROJECTS = [
@@ -10,7 +10,7 @@ export const PROJECTS = [
         id: 'focusfarm',
         title: 'FOCUSFARM',
         image: '/pics/focus-farm.png',
-        categories: [CATEGORIES.CODING, CATEGORIES.NEURO],
+        categories: [CATEGORIES.CODING, CATEGORIES.NEURO, CATEGORIES.DESIGN],
         width: 1024,
         height: 614,
         alt: 'FocusFarm game screenshot',
@@ -25,7 +25,7 @@ export const PROJECTS = [
         id: 'csef',
         title: 'CSEF REDESIGN',
         image: '/pics/Hand-Model-CSEF.jpg',
-        categories: [CATEGORIES.CODING, CATEGORIES.DESGIN],
+        categories: [CATEGORIES.CODING, CATEGORIES.DESIGN],
         link: 'https://www.collegeskateboarding.com/',
         isExternal: true, // Used for "Visit Website" button if added later
         width: 2500,
@@ -58,7 +58,7 @@ export const PROJECTS = [
         id: 'equiluna',
         title: 'EQUILUNA',
         image: '/pics/equiluna.png',
-        categories: [CATEGORIES.CODING],
+        categories: [CATEGORIES.CODING, CATEGORIES.DESIGN],
         video: 'https://www.youtube.com/embed/a0VEb8TLl2g?si=xw5TkaKjZ8vznHeh&autoplay=1',
         width: 1548,
         height: 1028,
